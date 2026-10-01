@@ -1,0 +1,130 @@
+---
+title: La Física de la Medición
+---
+## Conceptos iniciales
+Comenzamos este curso con una idea central: la física se apoya en las mediciones para construir modelos y hacer predicciones. Por eso conviene empezar precisando algunas definiciones.
+
+### ¿Qué es la física?
+La física es la ciencia que estudia el comportamiento de la materia, la energía y sus interacciones. Para ello combina mediciones experimentales con modelos matemáticos que permiten hacer predicciones y contrastarlas con la realidad.
+
+### ¿Qué es la cinemática?
+Es la rama de la física que describe el movimiento de los objetos sin considerar sus causas (las fuerzas), que se estudian en la dinámica.
+
+### ¿Qué es el movimiento?
+Es el cambio de la posición de un objeto, respecto a un sistema de referencia, a lo largo del tiempo.
+
+***
+## Mediciones
+
+Toda medición tiene una **incertidumbre**, que depende del instrumento utilizado (su resolución), del método de medición y de quien lo emplea. Por eso, un resultado experimental no es solo un número, sino un valor junto con una estimación de qué tan bien lo conocemos.
+
+### Cifras significativas
+
+Las cifras significativas son los dígitos de una medición que se conocen con confiabilidad, más un último dígito estimado. Reflejan la **precisión** con la que se midió, es decir, hasta dónde "alcanza" el instrumento.
+
+::: {.callout-note appearance="simple"}
+**Precisión y exactitud no son lo mismo.** La precisión indica qué tan finos o repetibles son los datos; la exactitud indica qué tan cerca están del valor verdadero. Las cifras significativas comunican la primera.
+:::
+
+### Convención para contar cifras significativas
+
+Estas reglas te ayudarán a determinar cuántas cifras significativas tiene una cantidad:
+
+1. Los dígitos distintos de cero siempre son significativos. *Ejemplo: 345 tiene 3.*
+
+2. Los ceros entre dígitos distintos de cero son significativos. *Ejemplo: 2007 tiene 4.*
+
+3. Los ceros a la izquierda del primer dígito distinto de cero **no** son significativos; solo indican la posición del punto decimal. *Ejemplo: 0.0045 tiene 2.*
+
+4. Los ceros a la derecha del punto decimal, después de un dígito distinto de cero, son significativos. *Ejemplo: 3.200 tiene 4.*
+
+5. Los ceros al final de un número entero sin punto decimal son ambiguos. *Ejemplo: 1500 podría tener 2, 3 o 4 cifras significativas.* Para evitar la ambigüedad usamos notación científica: $1.5 \times 10^3$ (2 cifras) o $1.500 \times 10^3$ (4 cifras).
+
+:::{.callout-note icon="false"} 
+## Ejemplo 1.1.
+¿Cuántas cifras significativas tienen las siguientes cantidades? 
+
+(a) $1020\;\text{N}$ 
+
+(b) $5003\;\text{kg}$
+
+(c) $5.00 \;\text{m}$
+
+(d) $10 000 \;\text{km}$
+:::
+:::{.callout-note collapse="true"}
+## Solución 1.1.
+La cantidad $1020 \;\text{N}$, tiene 3 cifras significativas.
+
+La cantidad $5003 \;\text{kg}$, tiene 4 cifras significativas.
+
+La cantidad $5.00 \;\text{m}$, tiene 3 cifras significativas.
+
+La cantidad $10 000 \;\text{km}$, tiene una sola cifra significativa.
+:::
+
+:::{.callout-tip collapse="true"}
+* Para este curso, regularmente manejaremoslas cantidades a **3 cifras significativas.**
+* Nunca olvides escribir **las unidades** en las cantidades que lo requieren.
+:::
+***
+## Operaciones con cifras significativas
+### Multiplicación
+Cuando se multipliquen o dividan dos o más cantidades, el número de cifras en el resultado, debe ser igual al número de cifras de la cantidad con menor número de cifras significativas.
+
+### Suma o resta
+Cuando los números se sumen o resten, el número de lugares decimales en el resultado debe ser igual al número más pequeño de lugares decimales de cualquier término en la suma o resta.
+
+:::{.
+::: {.callout-note icon="false"}
+## Ejemplo 1.2.
+Realice las siguientes operaciones tomando en cuenta las cifras significativas de los valores iniciales.
+
+(a) $25.0\,\text{m}\times2.0\,\text{m}$
+
+(b) $\frac{4}{3}\pi(5.00\,\text{cm})^3$
+
+(c) $12.00\,\text{N}+0.001\,\text{N}$
+:::
+
+::: {.callout-note collapse="true"}
+## Solución 1.2.
+(a) $25.0\,\text{m}\times2.0\,\text{m}=5.0\times10^1\,\text{m}^2$
+
+Debemos escribir el resultado a dos cifras significativas y $50\,\text{m}^2$ tiene solo una, por ello usamos notación científica. Recuerda que las unidades también se multiplican.
+
+(b) $\frac{4}{3}\pi(5.00\,\text{cm})^3=524\,\text{cm}^3$
+
+Las cantidades dadas en fórmulas se consideran como exactas, es decir tanto $\frac{4}{3}$ como $\pi$ tienen cifras infinitas.
+
+(c) $12.00\,\text{N}+0.001\,\text{N}=12.001\,\text{N}$
+:::
+
+
+***
+## Conversión de unidades
+
+En cantidades de la misma naturaleza, podemos usar distintas unidades de medida que se adapten a dicha medición.
+
+| Longitud | Masa | Tiempo |
+| -------- | ---- | ------ |
+|          |      |        |
+### Estrategia para convertir unidades
+```mermaid
+---
+config:
+  htmlLabels: false
+---
+flowchart LR
+    markdown["`Cantidad 
+    deseada`"]
+    newLines["`Cantidad
+    a
+    convertir`"]
+    markdown --> newLines
+
+```
+
+$$\cancel{\text{cantidad a convertir}}=\left(\frac{\text{cantidad deseada}}{\cancel{\text{cantidad a convertir}}}\right)=\text{cantidad deseada}$$
+
+***

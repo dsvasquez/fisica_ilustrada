@@ -1,5 +1,5 @@
 ---
-title: "fisica_ilustrada"
+title: "Física_Ilustrada"
 ---
 
 This is a Quarto website.
