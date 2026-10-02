@@ -2,10 +2,19 @@
 title: La Física de la Medición
 ---
 ## Conceptos iniciales
-Comenzamos este curso con una idea central: la física se apoya en las mediciones para construir modelos y hacer predicciones. Por eso conviene empezar precisando algunas definiciones.
+Este curso está pensado para introducirte a la física, con un enfoque en la medición y el análisis de datos. A lo largo de esta primer sección, aprenderás a realizar mediciones precisas, a interpretar los resultados y a comprender cómo la física utiliza estos datos para construir modelos y hacer predicciones.
+
+Aunque la física es un campo amplio y diverso, nos centraremos en los conceptos fundamentales que te permitirán desarrollar una base sólida para estudios más avanzados. La comprensión de estos principios te ayudará a apreciar cómo la física describe el mundo que nos rodea y cómo se aplican estos conocimientos en la vida cotidiana y en la tecnología.
+
+Antes de comenzar cualquier discusión, quizás es importante primero detenernos a pensar en qué es la física, qué estudia y por qué es importante. 
 
 ### ¿Qué es la física?
-La física es la ciencia que estudia el comportamiento de la materia, la energía y sus interacciones. Para ello combina mediciones experimentales con modelos matemáticos que permiten hacer predicciones y contrastarlas con la realidad.
+
+La física es una ciencia que busca entender los fenómenos naturales a través de la observación, la experimentación y el razonamiento lógico. Su importancia radica en su capacidad para explicar cómo funciona el universo, desde las partículas subatómicas hasta las galaxias, y en su aplicación en la tecnología que mejora nuestra vida diaria.
+
+Suena bastante amplio, ¿verdad? Es porque la física abarca una gran variedad de temas, desde la mecánica y la termodinámica hasta la óptica y la física cuántica. Sin embargo, en este curso nos enfocaremos en los aspectos más fundamentales y prácticos de la física. Especialmente la mecánica clásica, que es la rama de la física que estudia el movimiento de los cuerpos y las fuerzas que actúan sobre ellos.
+
+En ingeniería, la física es esencial para el diseño y análisis de sistemas, estructuras y procesos. Los ingenieros aplican principios físicos para resolver problemas prácticos, optimizar diseños y garantizar la seguridad y eficiencia de todos sus proyectos.
 
 ### ¿Qué es la cinemática?
 Es la rama de la física que describe el movimiento de los objetos sin considerar sus causas (las fuerzas), que se estudian en la dinámica.
@@ -75,7 +84,7 @@ Cuando se multipliquen o dividan dos o más cantidades, el número de cifras en 
 ### Suma o resta
 Cuando los números se sumen o resten, el número de lugares decimales en el resultado debe ser igual al número más pequeño de lugares decimales de cualquier término en la suma o resta.
 
-:::{.
+
 ::: {.callout-note icon="false"}
 ## Ejemplo 1.2.
 Realice las siguientes operaciones tomando en cuenta las cifras significativas de los valores iniciales.

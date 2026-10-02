@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,13 +12,10 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -42,14 +39,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ea1971949f186b5d7ecce1fd3cf000e4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-1033933cf7a2d68ded238f413a38f9a9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-ea1971949f186b5d7ecce1fd3cf000e4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-26d9cc88ab9604001aabd73cb1ea1d8f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-21fcf56ba1a3a1f47182456b1788f309.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-26d9cc88ab9604001aabd73cb1ea1d8f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -386,6 +383,10 @@ window.Quarto = {
   <li><a href="#multiplicación" id="toc-multiplicación" class="nav-link" data-scroll-target="#multiplicación">Multiplicación</a></li>
   <li><a href="#suma-o-resta" id="toc-suma-o-resta" class="nav-link" data-scroll-target="#suma-o-resta">Suma o resta</a></li>
   </ul></li>
+  <li><a href="#conversión-de-unidades" id="toc-conversión-de-unidades" class="nav-link" data-scroll-target="#conversión-de-unidades">Conversión de unidades</a>
+  <ul class="collapse">
+  <li><a href="#estrategia-para-convertir-unidades" id="toc-estrategia-para-convertir-unidades" class="nav-link" data-scroll-target="#estrategia-para-convertir-unidades">Estrategia para convertir unidades</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -414,10 +415,13 @@ window.Quarto = {
 
 <section id="conceptos-iniciales" class="level2">
 <h2 class="anchored" data-anchor-id="conceptos-iniciales">Conceptos iniciales</h2>
-<p>Comenzamos este curso con una idea central: la física se apoya en las mediciones para construir modelos y hacer predicciones. Por eso conviene empezar precisando algunas definiciones.</p>
+<p>Este curso está pensado para introducirte a la física, con un enfoque en la medición y el análisis de datos. A lo largo de esta primer sección, aprenderás a realizar mediciones precisas, a interpretar los resultados y a comprender cómo la física utiliza estos datos para construir modelos y hacer predicciones.</p>
+<p>Aunque la física es un campo amplio y diverso, nos centraremos en los conceptos fundamentales que te permitirán desarrollar una base sólida para estudios más avanzados. La comprensión de estos principios te ayudará a apreciar cómo la física describe el mundo que nos rodea y cómo se aplican estos conocimientos en la vida cotidiana y en la tecnología.</p>
+<p>Antes de comenzar cualquier discusión, quizás es importante primero detenernos a pensar en qué es la física, qué estudia y por qué es importante.</p>
 <section id="qué-es-la-física" class="level3">
 <h3 class="anchored" data-anchor-id="qué-es-la-física">¿Qué es la física?</h3>
-<p>La física es la ciencia que estudia el comportamiento de la materia, la energía y sus interacciones. Para ello combina mediciones experimentales con modelos matemáticos que permiten hacer predicciones y contrastarlas con la realidad.</p>
+<p>La física es una ciencia que busca entender los fenómenos naturales a través de la observación, la experimentación y el razonamiento lógico. Su importancia radica en su capacidad para explicar cómo funciona el universo, desde las partículas subatómicas hasta las galaxias, y en su aplicación en la tecnología que mejora nuestra vida diaria.</p>
+<p>Suena bastante amplio, ¿verdad? Es porque la física abarca una gran variedad de temas, desde la mecánica y la termodinámica hasta la óptica y la física cuántica. Sin embargo, en este curso nos enfocaremos en los aspectos más fundamentales y prácticos de la física. Especialmente la mecánica clásica, que es la rama de la física que estudia el movimiento de los cuerpos y las fuerzas que actúan sobre ellos.</p>
 </section>
 <section id="qué-es-la-cinemática" class="level3">
 <h3 class="anchored" data-anchor-id="qué-es-la-cinemática">¿Qué es la cinemática?</h3>
@@ -523,9 +527,8 @@ Tip
 <p>Cuando se multipliquen o dividan dos o más cantidades, el número de cifras en el resultado, debe ser igual al número de cifras de la cantidad con menor número de cifras significativas.</p>
 </section>
 <section id="suma-o-resta" class="level3">
-<h3 class="anchored">Suma o resta</h3>
+<h3 class="anchored" data-anchor-id="suma-o-resta">Suma o resta</h3>
 <p>Cuando los números se sumen o resten, el número de lugares decimales en el resultado debe ser igual al número más pequeño de lugares decimales de cualquier término en la suma o resta.</p>
-<div class="{.">
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -571,6 +574,8 @@ Tip
 </div>
 </div>
 <hr>
+</section>
+</section>
 <section id="conversión-de-unidades" class="level2">
 <h2 class="anchored" data-anchor-id="conversión-de-unidades">Conversión de unidades</h2>
 <p>En cantidades de la misma naturaleza, podemos usar distintas unidades de medida que se adapten a dicha medición.</p>
@@ -608,9 +613,6 @@ flowchart LR
 <hr>
 
 
-</section>
-</section>
-</div>
 </section>
 </section>
 

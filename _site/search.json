@@ -1,59 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Física_Ilustrada",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
-  },
-  {
-    "objectID": "1_introducción.html",
-    "href": "1_introducción.html",
-    "title": "La Física de la Medición",
-    "section": "",
-    "text": "Comenzamos este curso con una idea central: la física se apoya en las mediciones para construir modelos y hacer predicciones. Por eso conviene empezar precisando algunas definiciones.\n\n\nLa física es la ciencia que estudia el comportamiento de la materia, la energía y sus interacciones. Para ello combina mediciones experimentales con modelos matemáticos que permiten hacer predicciones y contrastarlas con la realidad.\n\n\n\nEs la rama de la física que describe el movimiento de los objetos sin considerar sus causas (las fuerzas), que se estudian en la dinámica.\n\n\n\nEs el cambio de la posición de un objeto, respecto a un sistema de referencia, a lo largo del tiempo."
-  },
-  {
-    "objectID": "1_introducción.html#conceptos-iniciales",
-    "href": "1_introducción.html#conceptos-iniciales",
-    "title": "La Física de la Medición",
-    "section": "",
-    "text": "Comenzamos este curso con una idea central: la física se apoya en las mediciones para construir modelos y hacer predicciones. Por eso conviene empezar precisando algunas definiciones.\n\n\nLa física es la ciencia que estudia el comportamiento de la materia, la energía y sus interacciones. Para ello combina mediciones experimentales con modelos matemáticos que permiten hacer predicciones y contrastarlas con la realidad.\n\n\n\nEs la rama de la física que describe el movimiento de los objetos sin considerar sus causas (las fuerzas), que se estudian en la dinámica.\n\n\n\nEs el cambio de la posición de un objeto, respecto a un sistema de referencia, a lo largo del tiempo."
-  },
-  {
-    "objectID": "1_introducción.html#mediciones",
-    "href": "1_introducción.html#mediciones",
-    "title": "La Física de la Medición",
-    "section": "Mediciones",
-    "text": "Mediciones\nToda medición tiene una incertidumbre, que depende del instrumento utilizado (su resolución), del método de medición y de quien lo emplea. Por eso, un resultado experimental no es solo un número, sino un valor junto con una estimación de qué tan bien lo conocemos.\n\nCifras significativas\nLas cifras significativas son los dígitos de una medición que se conocen con confiabilidad, más un último dígito estimado. Reflejan la precisión con la que se midió, es decir, hasta dónde “alcanza” el instrumento.\n\n\n\n\n\n\nPrecisión y exactitud no son lo mismo. La precisión indica qué tan finos o repetibles son los datos; la exactitud indica qué tan cerca están del valor verdadero. Las cifras significativas comunican la primera.\n\n\n\n\n\nConvención para contar cifras significativas\nEstas reglas te ayudarán a determinar cuántas cifras significativas tiene una cantidad:\n\nLos dígitos distintos de cero siempre son significativos. Ejemplo: 345 tiene 3.\nLos ceros entre dígitos distintos de cero son significativos. Ejemplo: 2007 tiene 4.\nLos ceros a la izquierda del primer dígito distinto de cero no son significativos; solo indican la posición del punto decimal. Ejemplo: 0.0045 tiene 2.\nLos ceros a la derecha del punto decimal, después de un dígito distinto de cero, son significativos. Ejemplo: 3.200 tiene 4.\nLos ceros al final de un número entero sin punto decimal son ambiguos. Ejemplo: 1500 podría tener 2, 3 o 4 cifras significativas. Para evitar la ambigüedad usamos notación científica: \\(1.5 \\times 10^3\\) (2 cifras) o \\(1.500 \\times 10^3\\) (4 cifras).\n\n\n\n\n\n\n\nNoteEjemplo 1.1.\n\n\n\n¿Cuántas cifras significativas tienen las siguientes cantidades?\n\n\\(1020\\;\\text{N}\\)\n\\(5003\\;\\text{kg}\\)\n\\(5.00 \\;\\text{m}\\)\n\\(10 000 \\;\\text{km}\\)\n\n\n\n\n\n\n\n\n\nNoteSolución 1.1.\n\n\n\n\n\nLa cantidad \\(1020 \\;\\text{N}\\), tiene 3 cifras significativas.\nLa cantidad \\(5003 \\;\\text{kg}\\), tiene 4 cifras significativas.\nLa cantidad \\(5.00 \\;\\text{m}\\), tiene 3 cifras significativas.\nLa cantidad \\(10 000 \\;\\text{km}\\), tiene una sola cifra significativa.\n\n\n\n\n\n\n\n\n\nTip\n\n\n\n\n\n\nPara este curso, regularmente manejaremoslas cantidades a 3 cifras significativas.\nNunca olvides escribir las unidades en las cantidades que lo requieren."
-  },
-  {
-    "objectID": "1_introducción.html#operaciones-con-cifras-significativas",
-    "href": "1_introducción.html#operaciones-con-cifras-significativas",
-    "title": "La Física de la Medición",
-    "section": "Operaciones con cifras significativas",
-    "text": "Operaciones con cifras significativas\n\nMultiplicación\nCuando se multipliquen o dividan dos o más cantidades, el número de cifras en el resultado, debe ser igual al número de cifras de la cantidad con menor número de cifras significativas.\n\n\nSuma o resta\nCuando los números se sumen o resten, el número de lugares decimales en el resultado debe ser igual al número más pequeño de lugares decimales de cualquier término en la suma o resta.\n\n\n\n\n\n\n\nNoteEjemplo 1.2.\n\n\n\nRealice las siguientes operaciones tomando en cuenta las cifras significativas de los valores iniciales.\n\n\\(25.0\\,\\text{m}\\times2.0\\,\\text{m}\\)\n\\(\\frac{4}{3}\\pi(5.00\\,\\text{cm})^3\\)\n\\(12.00\\,\\text{N}+0.001\\,\\text{N}\\)\n\n\n\n\n\n\n\n\n\nNoteSolución 1.2.\n\n\n\n\n\n\n\\(25.0\\,\\text{m}\\times2.0\\,\\text{m}=5.0\\times10^1\\,\\text{m}^2\\)\n\nDebemos escribir el resultado a dos cifras significativas y \\(50\\,\\text{m}^2\\) tiene solo una, por ello usamos notación científica. Recuerda que las unidades también se multiplican.\n\n\\(\\frac{4}{3}\\pi(5.00\\,\\text{cm})^3=524\\,\\text{cm}^3\\)\n\nLas cantidades dadas en fórmulas se consideran como exactas, es decir tanto \\(\\frac{4}{3}\\) como \\(\\pi\\) tienen cifras infinitas.\n\n\\(12.00\\,\\text{N}+0.001\\,\\text{N}=12.001\\,\\text{N}\\)\n\n\n\n\n\n\nConversión de unidades\nEn cantidades de la misma naturaleza, podemos usar distintas unidades de medida que se adapten a dicha medición.\n\n\n\nLongitud\nMasa\nTiempo\n\n\n\n\n\n\n\n\n\n\n\nEstrategia para convertir unidades\n---\nconfig:\n  htmlLabels: false\n---\nflowchart LR\n    markdown[\"`Cantidad \n    deseada`\"]\n    newLines[\"`Cantidad\n    a\n    convertir`\"]\n    markdown --&gt; newLines\n\n\\[\\cancel{\\text{cantidad a convertir}}=\\left(\\frac{\\text{cantidad deseada}}{\\cancel{\\text{cantidad a convertir}}}\\right)=\\text{cantidad deseada}\\]"
-  },
-  {
-    "objectID": "1_introducción.html#conversión-de-unidades",
-    "href": "1_introducción.html#conversión-de-unidades",
-    "title": "La Física de la Medición",
-    "section": "Conversión de unidades",
-    "text": "Conversión de unidades\nEn cantidades de la misma naturaleza, podemos usar distintas unidades de medida que se adapten a dicha medición.\n\n\n\nLongitud\nMasa\nTiempo\n\n\n\n\n\n\n\n\n\n\n\nEstrategia para convertir unidades\n---\nconfig:\n  htmlLabels: false\n---\nflowchart LR\n    markdown[\"`Cantidad \n    deseada`\"]\n    newLines[\"`Cantidad\n    a\n    convertir`\"]\n    markdown --&gt; newLines\n\n\\[\\cancel{\\text{cantidad a convertir}}=\\left(\\frac{\\text{cantidad deseada}}{\\cancel{\\text{cantidad a convertir}}}\\right)=\\text{cantidad deseada}\\]"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Acerca del autor",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "1_introduccion.html",
     "href": "1_introduccion.html",
     "title": "La Física de la Medición",
     "section": "",
-    "text": "Comenzamos este curso con una idea central: la física se apoya en las mediciones para construir modelos y hacer predicciones. Por eso conviene empezar precisando algunas definiciones.\n\n\nLa física es la ciencia que estudia el comportamiento de la materia, la energía y sus interacciones. Para ello combina mediciones experimentales con modelos matemáticos que permiten hacer predicciones y contrastarlas con la realidad.\n\n\n\nEs la rama de la física que describe el movimiento de los objetos sin considerar sus causas (las fuerzas), que se estudian en la dinámica.\n\n\n\nEs el cambio de la posición de un objeto, respecto a un sistema de referencia, a lo largo del tiempo.",
+    "text": "Este curso está pensado para introducirte a la física, con un enfoque en la medición y el análisis de datos. A lo largo de esta primer sección, aprenderás a realizar mediciones precisas, a interpretar los resultados y a comprender cómo la física utiliza estos datos para construir modelos y hacer predicciones.\nAunque la física es un campo amplio y diverso, nos centraremos en los conceptos fundamentales que te permitirán desarrollar una base sólida para estudios más avanzados. La comprensión de estos principios te ayudará a apreciar cómo la física describe el mundo que nos rodea y cómo se aplican estos conocimientos en la vida cotidiana y en la tecnología.\nAntes de comenzar cualquier discusión, quizás es importante primero detenernos a pensar en qué es la física, qué estudia y por qué es importante.\n\n\nLa física es una ciencia que busca entender los fenómenos naturales a través de la observación, la experimentación y el razonamiento lógico. Su importancia radica en su capacidad para explicar cómo funciona el universo, desde las partículas subatómicas hasta las galaxias, y en su aplicación en la tecnología que mejora nuestra vida diaria.\nSuena bastante amplio, ¿verdad? Es porque la física abarca una gran variedad de temas, desde la mecánica y la termodinámica hasta la óptica y la física cuántica. Sin embargo, en este curso nos enfocaremos en los aspectos más fundamentales y prácticos de la física. Especialmente la mecánica clásica, que es la rama de la física que estudia el movimiento de los cuerpos y las fuerzas que actúan sobre ellos.\n\n\n\nEs la rama de la física que describe el movimiento de los objetos sin considerar sus causas (las fuerzas), que se estudian en la dinámica.\n\n\n\nEs el cambio de la posición de un objeto, respecto a un sistema de referencia, a lo largo del tiempo.",
     "crumbs": [
       "Física A",
       "Capítulo 1: Física y Medición",
@@ -65,7 +16,7 @@
     "href": "1_introduccion.html#conceptos-iniciales",
     "title": "La Física de la Medición",
     "section": "",
-    "text": "Comenzamos este curso con una idea central: la física se apoya en las mediciones para construir modelos y hacer predicciones. Por eso conviene empezar precisando algunas definiciones.\n\n\nLa física es la ciencia que estudia el comportamiento de la materia, la energía y sus interacciones. Para ello combina mediciones experimentales con modelos matemáticos que permiten hacer predicciones y contrastarlas con la realidad.\n\n\n\nEs la rama de la física que describe el movimiento de los objetos sin considerar sus causas (las fuerzas), que se estudian en la dinámica.\n\n\n\nEs el cambio de la posición de un objeto, respecto a un sistema de referencia, a lo largo del tiempo.",
+    "text": "Este curso está pensado para introducirte a la física, con un enfoque en la medición y el análisis de datos. A lo largo de esta primer sección, aprenderás a realizar mediciones precisas, a interpretar los resultados y a comprender cómo la física utiliza estos datos para construir modelos y hacer predicciones.\nAunque la física es un campo amplio y diverso, nos centraremos en los conceptos fundamentales que te permitirán desarrollar una base sólida para estudios más avanzados. La comprensión de estos principios te ayudará a apreciar cómo la física describe el mundo que nos rodea y cómo se aplican estos conocimientos en la vida cotidiana y en la tecnología.\nAntes de comenzar cualquier discusión, quizás es importante primero detenernos a pensar en qué es la física, qué estudia y por qué es importante.\n\n\nLa física es una ciencia que busca entender los fenómenos naturales a través de la observación, la experimentación y el razonamiento lógico. Su importancia radica en su capacidad para explicar cómo funciona el universo, desde las partículas subatómicas hasta las galaxias, y en su aplicación en la tecnología que mejora nuestra vida diaria.\nSuena bastante amplio, ¿verdad? Es porque la física abarca una gran variedad de temas, desde la mecánica y la termodinámica hasta la óptica y la física cuántica. Sin embargo, en este curso nos enfocaremos en los aspectos más fundamentales y prácticos de la física. Especialmente la mecánica clásica, que es la rama de la física que estudia el movimiento de los cuerpos y las fuerzas que actúan sobre ellos.\n\n\n\nEs la rama de la física que describe el movimiento de los objetos sin considerar sus causas (las fuerzas), que se estudian en la dinámica.\n\n\n\nEs el cambio de la posición de un objeto, respecto a un sistema de referencia, a lo largo del tiempo.",
     "crumbs": [
       "Física A",
       "Capítulo 1: Física y Medición",
@@ -89,7 +40,7 @@
     "href": "1_introduccion.html#operaciones-con-cifras-significativas",
     "title": "La Física de la Medición",
     "section": "Operaciones con cifras significativas",
-    "text": "Operaciones con cifras significativas\n\nMultiplicación\nCuando se multipliquen o dividan dos o más cantidades, el número de cifras en el resultado, debe ser igual al número de cifras de la cantidad con menor número de cifras significativas.\n\n\nSuma o resta\nCuando los números se sumen o resten, el número de lugares decimales en el resultado debe ser igual al número más pequeño de lugares decimales de cualquier término en la suma o resta.\n\n\n\n\n\n\n\nNoteEjemplo 1.2.\n\n\n\nRealice las siguientes operaciones tomando en cuenta las cifras significativas de los valores iniciales.\n\n\\(25.0\\,\\text{m}\\times2.0\\,\\text{m}\\)\n\\(\\frac{4}{3}\\pi(5.00\\,\\text{cm})^3\\)\n\\(12.00\\,\\text{N}+0.001\\,\\text{N}\\)\n\n\n\n\n\n\n\n\n\nNoteSolución 1.2.\n\n\n\n\n\n\n\\(25.0\\,\\text{m}\\times2.0\\,\\text{m}=5.0\\times10^1\\,\\text{m}^2\\)\n\nDebemos escribir el resultado a dos cifras significativas y \\(50\\,\\text{m}^2\\) tiene solo una, por ello usamos notación científica. Recuerda que las unidades también se multiplican.\n\n\\(\\frac{4}{3}\\pi(5.00\\,\\text{cm})^3=524\\,\\text{cm}^3\\)\n\nLas cantidades dadas en fórmulas se consideran como exactas, es decir tanto \\(\\frac{4}{3}\\) como \\(\\pi\\) tienen cifras infinitas.\n\n\\(12.00\\,\\text{N}+0.001\\,\\text{N}=12.001\\,\\text{N}\\)\n\n\n\n\n\n\nConversión de unidades\nEn cantidades de la misma naturaleza, podemos usar distintas unidades de medida que se adapten a dicha medición.\n\n\n\nLongitud\nMasa\nTiempo\n\n\n\n\n\n\n\n\n\n\n\nEstrategia para convertir unidades\n---\nconfig:\n  htmlLabels: false\n---\nflowchart LR\n    markdown[\"`Cantidad \n    deseada`\"]\n    newLines[\"`Cantidad\n    a\n    convertir`\"]\n    markdown --&gt; newLines\n\n\\[\\cancel{\\text{cantidad a convertir}}=\\left(\\frac{\\text{cantidad deseada}}{\\cancel{\\text{cantidad a convertir}}}\\right)=\\text{cantidad deseada}\\]",
+    "text": "Operaciones con cifras significativas\n\nMultiplicación\nCuando se multipliquen o dividan dos o más cantidades, el número de cifras en el resultado, debe ser igual al número de cifras de la cantidad con menor número de cifras significativas.\n\n\nSuma o resta\nCuando los números se sumen o resten, el número de lugares decimales en el resultado debe ser igual al número más pequeño de lugares decimales de cualquier término en la suma o resta.\n\n\n\n\n\n\nNoteEjemplo 1.2.\n\n\n\nRealice las siguientes operaciones tomando en cuenta las cifras significativas de los valores iniciales.\n\n\\(25.0\\,\\text{m}\\times2.0\\,\\text{m}\\)\n\\(\\frac{4}{3}\\pi(5.00\\,\\text{cm})^3\\)\n\\(12.00\\,\\text{N}+0.001\\,\\text{N}\\)\n\n\n\n\n\n\n\n\n\nNoteSolución 1.2.\n\n\n\n\n\n\n\\(25.0\\,\\text{m}\\times2.0\\,\\text{m}=5.0\\times10^1\\,\\text{m}^2\\)\n\nDebemos escribir el resultado a dos cifras significativas y \\(50\\,\\text{m}^2\\) tiene solo una, por ello usamos notación científica. Recuerda que las unidades también se multiplican.\n\n\\(\\frac{4}{3}\\pi(5.00\\,\\text{cm})^3=524\\,\\text{cm}^3\\)\n\nLas cantidades dadas en fórmulas se consideran como exactas, es decir tanto \\(\\frac{4}{3}\\) como \\(\\pi\\) tienen cifras infinitas.\n\n\\(12.00\\,\\text{N}+0.001\\,\\text{N}=12.001\\,\\text{N}\\)",
     "crumbs": [
       "Física A",
       "Capítulo 1: Física y Medición",
@@ -107,5 +58,19 @@
       "Capítulo 1: Física y Medición",
       "La Física de la Medición"
     ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Física_Ilustrada",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Acerca del autor",
+    "section": "",
+    "text": "Hola, mi nombre es Daniel, y soy el autor de este sitio web. Soy profesor del Deparatamento de Físico-Matemático de la Universidad Autónoma de san Luis Potosí desde el año 2018."
   }
 ]

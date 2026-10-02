@@ -2,4 +2,4 @@
 title: "Acerca del autor"
 ---
 
-About this site
+Hola, mi nombre es Daniel, y soy el autor de este sitio web. Soy profesor del Deparatamento de Físico-Matemático de la Universidad Autónoma de san Luis Potosí desde el año 2018. 
