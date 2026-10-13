@@ -1,0 +1,18 @@
+---
+title: Vectores
+---
+
+En física, un vector es una cantidad que contiene no solo magnitud, sino también dirección.
+Gráficamente la representamos como una flecha, y analíticamente hay varias maneras de escribir un vector.
+
+## Cantidades escalares vs. cantidades vectoriales
+Las cantidades escalares son aquellas que usamos comúnmente en nuestro día a día, como por ejemplo, la temperatura en cierto momento, o la distancia en kilómetros que nos tomó cierto viaje. Estas cantidades escalares solo tienen magnitud, es decir, las describimos solamente como un número y su respectiva unidad. 
+Las cantidades escalares que tienen las mismas unidades físicas se pueden sumar o restar según las reglas habituales del álgebra para números. Por ejemplo, una clase que termina 10 minutos antes de los 50 minutos dura 50 min - 10 min = 40 min. De manera similar, una porción de maíz de 60 calorías seguida de una porción de donas de 200 calorías da 60 cal + 200 cal = 260 cal de energía. Cuando multiplicamos una cantidad escalar por un número, obtenemos la misma cantidad escalar pero con un valor mayor (o menor). Por ejemplo, si el desayuno de ayer tenía 200 cal de energía y el de hoy tiene cuatro veces más energía que el de ayer, entonces el desayuno de hoy tiene 4⁢(200 cal) = 800 cal de energía. Dos cantidades escalares también se pueden multiplicar o dividir entre sí para formar una cantidad escalar derivada. Por ejemplo, si un tren recorre una distancia de 100 km en 1,0 h, su velocidad es 100,0 km/1,0 h = 27,8 m/s, donde la velocidad es una magnitud escalar derivada que se obtiene dividiendo la distancia entre el tiempo.
+En cambio, las cantidades vectoriales son útiles en la física porque en muchas ocasiones sumar ciertas cantidades requiere que sepamos hacia dónde apuntan.
+Un ejemplo sencillo para ilustrar una situación específica donde es necesario manejar la naturaleza de los vectores es el que se muestra a continuación.
+
+:::{.callout-note icon="false"} 
+## Ejemplo 2.1.
+Una lancha se encuentra en un río cuya corriente es de $1.00\, \frac{\text{km}}{\text{h}}$ hacia el norte, si la vela del bote apunta al sur y el viento sopla en la misma dirección con una velocidad de $5.00\,\frac{\text{km}}{\text{h}}$.
+¿En qué dirección se moverá la lancha?
+:::

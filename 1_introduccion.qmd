@@ -16,12 +16,6 @@ Suena bastante amplio, ¿verdad? Es porque la física abarca una gran variedad d
 
 En ingeniería, la física es esencial para el diseño y análisis de sistemas, estructuras y procesos. Los ingenieros aplican principios físicos para resolver problemas prácticos, optimizar diseños y garantizar la seguridad y eficiencia de todos sus proyectos.
 
-### ¿Qué es la cinemática?
-Es la rama de la física que describe el movimiento de los objetos sin considerar sus causas (las fuerzas), que se estudian en la dinámica.
-
-### ¿Qué es el movimiento?
-Es el cambio de la posición de un objeto, respecto a un sistema de referencia, a lo largo del tiempo.
-
 ***
 ## Mediciones
 

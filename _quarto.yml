@@ -23,7 +23,7 @@ website:
           - 1_2_vectores.qmd
       - section: "Capítulo 2: Cinemática"
         contents:
-          - 2_movimiento.qmd
+          - 2_1_movimiento1d.qmd
 format:
   html:
     theme:

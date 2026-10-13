@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -39,14 +42,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-26d9cc88ab9604001aabd73cb1ea1d8f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-21fcf56ba1a3a1f47182456b1788f309.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-26d9cc88ab9604001aabd73cb1ea1d8f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ea1971949f186b5d7ecce1fd3cf000e4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-1033933cf7a2d68ded238f413a38f9a9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-ea1971949f186b5d7ecce1fd3cf000e4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -339,8 +342,11 @@ window.Quarto = {
   </div>
 </li>
           <li class="sidebar-item">
- <span class="menu-text">1_2_vectores.qmd</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="./1_2_vectores.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Vectores</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -353,8 +359,11 @@ window.Quarto = {
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
- <span class="menu-text">2_movimiento.qmd</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="./2_1_movimiento1d.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2_1_movimiento1d.html</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -370,8 +379,6 @@ window.Quarto = {
   <li><a href="#conceptos-iniciales" id="toc-conceptos-iniciales" class="nav-link active" data-scroll-target="#conceptos-iniciales">Conceptos iniciales</a>
   <ul class="collapse">
   <li><a href="#qué-es-la-física" id="toc-qué-es-la-física" class="nav-link" data-scroll-target="#qué-es-la-física">¿Qué es la física?</a></li>
-  <li><a href="#qué-es-la-cinemática" id="toc-qué-es-la-cinemática" class="nav-link" data-scroll-target="#qué-es-la-cinemática">¿Qué es la cinemática?</a></li>
-  <li><a href="#qué-es-el-movimiento" id="toc-qué-es-el-movimiento" class="nav-link" data-scroll-target="#qué-es-el-movimiento">¿Qué es el movimiento?</a></li>
   </ul></li>
   <li><a href="#mediciones" id="toc-mediciones" class="nav-link" data-scroll-target="#mediciones">Mediciones</a>
   <ul class="collapse">
@@ -422,14 +429,7 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="qué-es-la-física">¿Qué es la física?</h3>
 <p>La física es una ciencia que busca entender los fenómenos naturales a través de la observación, la experimentación y el razonamiento lógico. Su importancia radica en su capacidad para explicar cómo funciona el universo, desde las partículas subatómicas hasta las galaxias, y en su aplicación en la tecnología que mejora nuestra vida diaria.</p>
 <p>Suena bastante amplio, ¿verdad? Es porque la física abarca una gran variedad de temas, desde la mecánica y la termodinámica hasta la óptica y la física cuántica. Sin embargo, en este curso nos enfocaremos en los aspectos más fundamentales y prácticos de la física. Especialmente la mecánica clásica, que es la rama de la física que estudia el movimiento de los cuerpos y las fuerzas que actúan sobre ellos.</p>
-</section>
-<section id="qué-es-la-cinemática" class="level3">
-<h3 class="anchored" data-anchor-id="qué-es-la-cinemática">¿Qué es la cinemática?</h3>
-<p>Es la rama de la física que describe el movimiento de los objetos sin considerar sus causas (las fuerzas), que se estudian en la dinámica.</p>
-</section>
-<section id="qué-es-el-movimiento" class="level3">
-<h3 class="anchored" data-anchor-id="qué-es-el-movimiento">¿Qué es el movimiento?</h3>
-<p>Es el cambio de la posición de un objeto, respecto a un sistema de referencia, a lo largo del tiempo.</p>
+<p>En ingeniería, la física es esencial para el diseño y análisis de sistemas, estructuras y procesos. Los ingenieros aplican principios físicos para resolver problemas prácticos, optimizar diseños y garantizar la seguridad y eficiencia de todos sus proyectos.</p>
 <hr>
 </section>
 </section>
