@@ -1,6 +1,6 @@
 project:
   type: website
-
+lang: es
 website:
   title: "Física ilustrada"
   navbar:
@@ -9,7 +9,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: 1_introduccion.qmd
+      - href: fisica_a\unidad_1\1_introduccion.qmd
         text: Física A
       - about.qmd
   sidebar:
@@ -19,11 +19,13 @@ website:
     contents:
       - section: "Capítulo 1: Física y Medición"
         contents:
-          - 1_introduccion.qmd
-          - 1_2_vectores.qmd
+          - fisica_a\unidad_1\1_introduccion.qmd
+          - fisica_a\unidad_1\1_2_vectores.qmd
+          - fisica_a\unidad_1\1_3_aritmetica_vectorial.qmd
+          - fisica_a\unidad_1\1_4_problemas_resueltos.qmd
       - section: "Capítulo 2: Cinemática"
         contents:
-          - 2_1_movimiento1d.qmd
+          - fisica_a\unidad_2\2_1_movimiento1d.qmd
 format:
   html:
     theme:

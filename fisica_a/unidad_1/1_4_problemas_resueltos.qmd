@@ -1,0 +1,315 @@
+---
+title: Problemas resueltos
+---
+
+En esta sección aplicamos todo lo visto en el capítulo: cifras significativas, conversión de unidades, representación de vectores y aritmética vectorial. A diferencia de los ejemplos, estos problemas combinan varias ideas a la vez, como ocurre en los problemas reales de ingeniería.
+
+Te recomendamos **intentar cada problema antes de abrir la solución**. Equivocarte en el intento es parte del aprendizaje; leer la solución sin haberlo intentado se parece mucho a ver a alguien más hacer ejercicio.
+
+::: {.callout-tip}
+## Estrategia general para resolver problemas
+1. **Lee y dibuja.** Haz un esquema de la situación; si hay vectores, traza un sistema de coordenadas.
+2. **Identifica los datos y la incógnita.** Escríbelos con sus unidades.
+3. **Convierte las unidades** para que todas sean consistentes (de preferencia al SI).
+4. **Elige el método**: conversión, componentes, suma o resta de vectores, etc.
+5. **Calcula** sin redondear los resultados intermedios.
+6. **Revisa el resultado**: ¿tiene las unidades correctas, las cifras significativas adecuadas y un valor razonable? Si es un vector, ¿la dirección coincide con tu dibujo?
+:::
+
+***
+
+## Problema 1.1.
+Una placa rectangular de acero mide $21.3\,\text{cm}$ de largo, $9.80\,\text{cm}$ de ancho y $0.250\,\text{cm}$ de espesor. Calcule, respetando las cifras significativas:
+
+(a) el perímetro de la cara superior,
+
+(b) el área de la cara superior,
+
+(c) el volumen de la placa, en $\text{cm}^3$ y en $\text{m}^3$.
+
+
+::: {.callout-note collapse="true"}
+## Solución 1.1.
+(a) El perímetro es una **suma**, así que importa el número de decimales. Primero sumamos largo y ancho:
+
+$$21.3\,\text{cm}+9.80\,\text{cm}=31.1\,\text{cm}$$
+
+El resultado se queda con **un** decimal, porque $21.3$ solo tiene uno. El factor 2 es exacto:
+
+$$P=2\,(31.1\,\text{cm})=62.2\,\text{cm}$$
+
+(b) El área es una **multiplicación**, así que importa el número de cifras significativas. Ambos datos tienen 3:
+
+$$A=(21.3\,\text{cm})(9.80\,\text{cm})=208.74\,\text{cm}^2\approx209\,\text{cm}^2$$
+
+(c) Usamos el área **sin redondear** para no acumular errores:
+
+$$V=(208.74\,\text{cm}^2)(0.250\,\text{cm})=52.185\,\text{cm}^3\approx52.2\,\text{cm}^3$$
+
+Para pasar a metros cúbicos, el factor de conversión se eleva al cubo:
+
+$$52.2\,\cancel{\text{cm}^3}\left(\frac{1\,\text{m}}{100\,\cancel{\text{cm}}}\right)^3=52.2\times10^{-6}\,\text{m}^3=5.22\times10^{-5}\,\text{m}^3$$
+
+Observa que el resultado conserva 3 cifras significativas; la notación científica solo cambia la forma de escribirlo.
+:::
+
+***
+
+## Problema 1.2.
+La densidad del acero estructural es de $7.85\,\frac{\text{g}}{\text{cm}^3}$. Una viga de acero mide $3.00\,\text{m}$ de largo y su sección transversal tiene un área de $20.0\,\text{cm}^2$.
+
+(a) Exprese la densidad del acero en $\frac{\text{kg}}{\text{m}^3}$.
+
+(b) Calcule la masa de la viga en kilogramos.
+
+
+::: {.callout-note collapse="true"}
+## Solución 1.2.
+(a) Hay que convertir dos unidades: gramos a kilogramos y centímetros cúbicos a metros cúbicos. Como $1\,\text{m}^3=10^6\,\text{cm}^3$:
+
+$$7.85\,\frac{\cancel{\text{g}}}{\cancel{\text{cm}^3}}\left(\frac{1\,\text{kg}}{1000\,\cancel{\text{g}}}\right)\left(\frac{10^{6}\,\cancel{\text{cm}^3}}{1\,\text{m}^3}\right)=7.85\times10^{3}\,\frac{\text{kg}}{\text{m}^3}$$
+
+Es decir, un metro cúbico de acero tiene una masa de $7850\,\text{kg}$.
+
+(b) Antes de calcular el volumen, ponemos todas las longitudes en metros. El área se convierte con el factor **al cuadrado**:
+
+$$20.0\,\cancel{\text{cm}^2}\left(\frac{1\,\text{m}}{100\,\cancel{\text{cm}}}\right)^2=20.0\times10^{-4}\,\text{m}^2=2.00\times10^{-3}\,\text{m}^2$$
+
+El volumen de la viga es
+
+$$V=(2.00\times10^{-3}\,\text{m}^2)(3.00\,\text{m})=6.00\times10^{-3}\,\text{m}^3$$
+
+y su masa, densidad por volumen:
+
+$$m=\rho V=\left(7.85\times10^{3}\,\frac{\text{kg}}{\cancel{\text{m}^3}}\right)(6.00\times10^{-3}\,\cancel{\text{m}^3})=47.1\,\text{kg}$$
+
+**¿Es razonable?** Una viga de 3 m que puede cargar una persona fuerte (con algo de esfuerzo) tiene sentido para una sección de apenas $20\,\text{cm}^2$.
+:::
+
+***
+
+
+## Problema 1.3.
+Un velocista recorre $100.0\,\text{yd}$ en $9.50\,\text{s}$. Determine su rapidez media en $\frac{\text{m}}{\text{s}}$ y en $\frac{\text{km}}{\text{h}}$.
+***
+
+::::: {.callout-note collapse="true"}
+## Solución 1.3.
+Convertimos primero la distancia. El factor $1\,\text{yd}=0.9144\,\text{m}$ es exacto:
+
+$$100.0\,\cancel{\text{yd}}\left(\frac{0.9144\,\text{m}}{1\,\cancel{\text{yd}}}\right)=91.44\,\text{m}$$
+
+La rapidez media es la distancia entre el tiempo. El tiempo tiene 3 cifras significativas, así que el resultado también:
+
+$$v=\frac{91.44\,\text{m}}{9.50\,\text{s}}=9.6253\,\frac{\text{m}}{\text{s}}\approx9.63\,\frac{\text{m}}{\text{s}}$$
+
+Ahora pasamos a kilómetros por hora (usando el valor sin redondear):
+
+$$9.6253\,\frac{\cancel{\text{m}}}{\cancel{\text{s}}}\left(\frac{1\,\text{km}}{1000\,\cancel{\text{m}}}\right)\left(\frac{3600\,\cancel{\text{s}}}{1\,\text{h}}\right)=34.65\,\frac{\text{km}}{\text{h}}\approx34.7\,\frac{\text{km}}{\text{h}}$$
+
+::: {.callout-tip appearance="simple"}
+**Atajo útil:** para pasar de $\frac{\text{m}}{\text{s}}$ a $\frac{\text{km}}{\text{h}}$ basta multiplicar por $3.6$, y para el camino inverso, dividir entre $3.6$.
+:::
+:::::
+
+***
+
+
+
+## Problema 1.4.
+Un dron de inspección se desplaza $250\,\text{m}$ en dirección $35.0^\circ$ al norte del oeste. Tomando el este como $+x$ y el norte como $+y$:
+
+(a) Determine las componentes del desplazamiento.
+
+(b) Escriba el desplazamiento en notación de vectores unitarios.
+
+(c) Obtenga el vector unitario en la dirección del movimiento.
+
+<!-- FIGURA: vector de 250 m en el segundo cuadrante, a 35.0° por encima del eje -x -->
+
+::: {.callout-note collapse="true"}
+## Solución 1.4.
+(a) "Al norte del oeste" significa que partimos del oeste (eje $-x$) y giramos $35.0^\circ$ hacia el norte. El vector queda en el **segundo cuadrante**, así que esperamos $d_x<0$ y $d_y>0$.
+
+El ángulo medido desde el eje $+x$ es
+
+$$\theta=180^\circ-35.0^\circ=145^\circ$$
+
+Con él, las fórmulas dan los signos automáticamente:
+
+$$d_x=(250\,\text{m})\cos145^\circ=-205\,\text{m}$$
+
+$$d_y=(250\,\text{m})\sin145^\circ=143\,\text{m}$$
+
+(b)
+
+$$\vec{d}=\left(-205\,\hat{\imath}+143\,\hat{\jmath}\right)\text{m}$$
+
+(c) Dividimos el vector entre su magnitud, $d=250\,\text{m}$:
+
+$$\hat{d}=\frac{\vec{d}}{d}=\frac{-204.8\,\hat{\imath}+143.4\,\hat{\jmath}}{250}=-0.819\,\hat{\imath}+0.574\,\hat{\jmath}$$
+
+**Comprobación:** $\sqrt{(-0.819)^2+(0.574)^2}=1.00$, como debe ser para un vector unitario. Observa además que $\hat{d}=\cos145^\circ\,\hat{\imath}+\sin145^\circ\,\hat{\jmath}$: las componentes de un vector unitario son siempre el coseno y el seno de su ángulo.
+:::
+
+***
+
+
+
+## Problema 1.5.
+Una topógrafa recorre tres tramos sobre un terreno plano:
+
+* $\vec{d}_1$: $4.00\,\text{km}$ hacia el este,
+* $\vec{d}_2$: $3.00\,\text{km}$ a $30.0^\circ$ al norte del oeste,
+* $\vec{d}_3$: $2.50\,\text{km}$ hacia el sur.
+
+Determine (a) su desplazamiento total en notación de vectores unitarios, (b) la magnitud y dirección del desplazamiento y (c) la distancia total recorrida.
+
+
+<!-- FIGURA: los tres desplazamientos colocados cabeza a cola y la resultante R desde el origen -->
+
+::: {.callout-note collapse="true"}
+## Solución 1.5.
+(a) Tomamos el este como $+x$ y el norte como $+y$ y escribimos cada tramo por componentes. Conviene ordenarlos en una tabla:
+
+| Vector | Componente $x$ (km) | Componente $y$ (km) |
+|:------:|:-------------------:|:-------------------:|
+| $\vec{d}_1$ | $4.00$ | $0$ |
+| $\vec{d}_2$ | $-3.00\cos30.0^\circ=-2.598$ | $3.00\sin30.0^\circ=1.500$ |
+| $\vec{d}_3$ | $0$ | $-2.50$ |
+| $\vec{R}$ | $1.402$ | $-1.000$ |
+
+Sumando cada columna:
+
+$$\vec{R}=\left(1.40\,\hat{\imath}-1.00\,\hat{\jmath}\right)\text{km}$$
+
+(b) La magnitud es
+
+$$R=\sqrt{(1.402\,\text{km})^2+(-1.000\,\text{km})^2}=1.72\,\text{km}$$
+
+Como $R_x>0$ y $R_y<0$, el vector está en el **cuarto cuadrante** y la calculadora da directamente el ángulo correcto:
+
+$$\theta=\tan^{-1}\!\left(\frac{-1.000}{1.402}\right)=-35.5^\circ$$
+
+El desplazamiento es de $1.72\,\text{km}$ a $35.5^\circ$ **al sur del este**.
+
+(c) La distancia recorrida es la suma de las magnitudes de los tramos (escalares):
+
+$$4.00\,\text{km}+3.00\,\text{km}+2.50\,\text{km}=9.50\,\text{km}$$
+
+La topógrafa caminó $9.50\,\text{km}$, pero terminó a solo $1.72\,\text{km}$ del punto de partida.
+:::
+
+
+## Problema 1.6.
+Dos cables sujetan un poste. El cable 1 ejerce una fuerza de $600\,\text{N}$ a $30.0^\circ$ y el cable 2 una fuerza de $400\,\text{N}$ a $135^\circ$, ambos ángulos medidos desde el eje $+x$.
+
+(a) Determine la fuerza resultante $\vec{R}=\vec{F}_1+\vec{F}_2$ (magnitud y dirección).
+
+(b) Se desea colocar un tercer cable para que la fuerza total sobre el poste sea cero. ¿Qué fuerza $\vec{F}_3$ debe ejercer ese cable?
+
+
+<!-- FIGURA: poste visto desde arriba con F1, F2 y la resultante R; F3 opuesta a R -->
+
+::: {.callout-note collapse="true"}
+## Solución 1.6.
+(a) Descomponemos cada fuerza:
+
+$$\vec{F}_1=(600\,\text{N})\left(\cos30.0^\circ\,\hat{\imath}+\sin30.0^\circ\,\hat{\jmath}\right)=\left(519.6\,\hat{\imath}+300.0\,\hat{\jmath}\right)\text{N}$$
+
+$$\vec{F}_2=(400\,\text{N})\left(\cos135^\circ\,\hat{\imath}+\sin135^\circ\,\hat{\jmath}\right)=\left(-282.8\,\hat{\imath}+282.8\,\hat{\jmath}\right)\text{N}$$
+
+Sumamos componente a componente:
+
+$$\vec{R}=\left(236.8\,\hat{\imath}+582.8\,\hat{\jmath}\right)\text{N}$$
+
+Magnitud y dirección (primer cuadrante, la calculadora no necesita corrección):
+
+$$R=\sqrt{(236.8\,\text{N})^2+(582.8\,\text{N})^2}=629\,\text{N}$$
+
+$$\theta=\tan^{-1}\!\left(\frac{582.8}{236.8}\right)=67.9^\circ$$
+
+Observa que $629\,\text{N}$ es mucho menor que $600\,\text{N}+400\,\text{N}=1000\,\text{N}$: las fuerzas no apuntan en la misma dirección.
+
+(b) Queremos $\vec{F}_1+\vec{F}_2+\vec{F}_3=\vec{0}$, es decir, $\vec{R}+\vec{F}_3=\vec{0}$. Entonces $\vec{F}_3$ es el **negativo** de la resultante:
+
+$$\vec{F}_3=-\vec{R}=\left(-237\,\hat{\imath}-583\,\hat{\jmath}\right)\text{N}$$
+
+Tiene la misma magnitud que $\vec{R}$, $629\,\text{N}$, y apunta en sentido opuesto:
+
+$$\theta_3=67.9^\circ+180^\circ=248^\circ$$
+:::
+
+***
+
+## Problema 1.7.
+Un automóvil da vuelta en una esquina. Antes de la vuelta su velocidad es de $20.0\,\frac{\text{m}}{\text{s}}$ hacia el este y después de ella es de $15.0\,\frac{\text{m}}{\text{s}}$ hacia el norte. Determine el **cambio de velocidad** $\Delta\vec{v}=\vec{v}_f-\vec{v}_i$ (magnitud y dirección).
+
+
+::: {.callout-note collapse="true"}
+## Solución 1.7.
+Con el este como $+x$ y el norte como $+y$:
+
+$$\vec{v}_i=20.0\,\hat{\imath}\;\frac{\text{m}}{\text{s}} \qquad\qquad \vec{v}_f=15.0\,\hat{\jmath}\;\frac{\text{m}}{\text{s}}$$
+
+Restamos componente a componente:
+
+$$\Delta\vec{v}=\vec{v}_f-\vec{v}_i=\left(-20.0\,\hat{\imath}+15.0\,\hat{\jmath}\right)\frac{\text{m}}{\text{s}}$$
+
+Magnitud:
+
+$$|\Delta\vec{v}|=\sqrt{(-20.0)^2+(15.0)^2}\;\frac{\text{m}}{\text{s}}=25.0\,\frac{\text{m}}{\text{s}}$$
+
+Dirección: $\Delta v_x<0$ y $\Delta v_y>0$, así que el vector está en el **segundo cuadrante**. La calculadora da
+
+$$\tan^{-1}\!\left(\frac{15.0}{-20.0}\right)=-36.9^\circ$$
+
+que corresponde al cuarto cuadrante, de modo que sumamos $180^\circ$:
+
+$$\theta=-36.9^\circ+180^\circ=143^\circ$$
+
+es decir, $36.9^\circ$ **al norte del oeste**.
+
+**Observación importante:** la rapidez del auto solo bajó de $20.0$ a $15.0\,\frac{\text{m}}{\text{s}}$, pero el cambio de velocidad tiene una magnitud de $25.0\,\frac{\text{m}}{\text{s}}$. Cambiar de dirección también es cambiar de velocidad; esta idea será clave cuando estudiemos la aceleración.
+:::
+
+***
+
+## Problema 1.8.
+Dados los vectores $\vec{A}=\left(3.00\,\hat{\imath}-2.00\,\hat{\jmath}\right)\text{m}$ y $\vec{B}=\left(-1.00\,\hat{\imath}+4.00\,\hat{\jmath}\right)\text{m}$, calcule:
+
+(a) $\vec{C}=2\vec{A}-3\vec{B}$,
+
+(b) la magnitud y dirección de $\vec{C}$,
+
+(c) el vector unitario $\hat{C}$.
+
+
+::: {.callout-note collapse="true"}
+## Solución 1.8.
+(a) Primero multiplicamos cada vector por su escalar:
+
+$$2\vec{A}=\left(6.00\,\hat{\imath}-4.00\,\hat{\jmath}\right)\text{m} \qquad\qquad 3\vec{B}=\left(-3.00\,\hat{\imath}+12.0\,\hat{\jmath}\right)\text{m}$$
+
+y después restamos componente a componente (¡cuidado con los signos!):
+
+$$\vec{C}=\left[(6.00-(-3.00))\,\hat{\imath}+(-4.00-12.0)\,\hat{\jmath}\right]\text{m}=\left(9.00\,\hat{\imath}-16.0\,\hat{\jmath}\right)\text{m}$$
+
+(b) Magnitud:
+
+$$C=\sqrt{(9.00\,\text{m})^2+(-16.0\,\text{m})^2}=\sqrt{337}\,\text{m}=18.4\,\text{m}$$
+
+Como $C_x>0$ y $C_y<0$, el vector está en el cuarto cuadrante:
+
+$$\theta=\tan^{-1}\!\left(\frac{-16.0}{9.00}\right)=-60.6^\circ$$
+
+es decir, $60.6^\circ$ por debajo del eje $+x$ (o, de forma equivalente, $299^\circ$).
+
+(c)
+
+$$\hat{C}=\frac{\vec{C}}{C}=\frac{9.00\,\hat{\imath}-16.0\,\hat{\jmath}}{18.36}=0.490\,\hat{\imath}-0.872\,\hat{\jmath}$$
+
+Las unidades se cancelan y $\hat{C}$ queda adimensional, con magnitud 1.
+:::
+
+***

@@ -1,0 +1,215 @@
+---
+title: La Física de la Medición
+---
+
+## Conceptos iniciales
+Este curso está pensado para introducirte a la física, con un enfoque en las aplicaciones a la ingeniería. A lo largo de esta primer sección, aprenderás la importancia de lasmediciones precisas, a interpretar los resultados y a comprender cómo la física utiliza estos datos para construir modelos y hacer predicciones.
+
+Aunque la física es un campo amplio y diverso, nos centraremos en los conceptos fundamentales que te permitirán desarrollar una base sólida para estudios más avanzados. La comprensión de estos principios te ayudará a apreciar cómo la física describe el mundo que nos rodea y cómo se aplican estos conocimientos en la vida cotidiana y en la tecnología.
+
+Antes de comenzar cualquier discusión, quizás es importante primero detenernos a pensar en qué es la física, qué estudia y por qué es importante. 
+
+### ¿Qué es la física?
+
+La física es una ciencia que busca entender los fenómenos naturales a través de la observación, la experimentación y el razonamiento lógico. Su importancia radica en su capacidad para explicar cómo funciona el universo, desde las partículas subatómicas hasta las galaxias, y en su aplicación en la tecnología que mejora nuestra vida diaria.
+
+Suena bastante amplio, ¿verdad? Es porque la física abarca una gran variedad de temas, desde la mecánica y la termodinámica hasta la óptica y la física cuántica. Sin embargo, en este curso nos enfocaremos en los aspectos más fundamentales y prácticos de la física. Especialmente la mecánica clásica, que es la rama de la física que estudia el movimiento de los cuerpos y las fuerzas que actúan sobre ellos.
+
+En ingeniería, la física es esencial para el diseño y análisis de sistemas, estructuras y procesos. Los ingenieros aplican principios físicos para resolver problemas prácticos, optimizar diseños y garantizar la seguridad y eficiencia de todos sus proyectos.
+
+***
+
+## Mediciones
+
+Toda medición tiene una **incertidumbre**, que depende del instrumento utilizado (su resolución), del método de medición y de quien lo emplea. Por eso, un resultado experimental no es solo un número, sino un valor junto con una estimación de qué tan bien lo conocemos.
+
+### Cifras significativas
+
+Las cifras significativas son los dígitos de una medición que se conocen con confiabilidad, más un último dígito estimado. Reflejan la **precisión** con la que se midió, es decir, hasta dónde "alcanza" el instrumento.
+
+::: {.callout-note appearance="simple"}
+**Precisión y exactitud no son lo mismo.** La precisión indica qué tan finos o repetibles son los datos; la exactitud indica qué tan cerca están del valor verdadero. Las cifras significativas comunican la primera.
+:::
+
+### Convención para contar cifras significativas
+
+Estas reglas te ayudarán a determinar cuántas cifras significativas tiene una cantidad:
+
+1. Los dígitos distintos de cero siempre son significativos. *Ejemplo: 345 tiene 3.*
+
+2. Los ceros entre dígitos distintos de cero son significativos. *Ejemplo: 2007 tiene 4.*
+
+3. Los ceros a la izquierda del primer dígito distinto de cero **no** son significativos; solo indican la posición del punto decimal. *Ejemplo: 0.0045 tiene 2.*
+
+4. Los ceros a la derecha del punto decimal, después de un dígito distinto de cero, son significativos. *Ejemplo: 3.200 tiene 4.*
+
+5. Los ceros al final de un número entero sin punto decimal son ambiguos. *Ejemplo: 1500 podría tener 2, 3 o 4 cifras significativas.* Para evitar la ambigüedad usamos notación científica: $1.5 \times 10^3$ (2 cifras) o $1.500 \times 10^3$ (4 cifras).
+
+:::{.callout-note icon="false"} 
+## Ejemplo 1.1.
+¿Cuántas cifras significativas tienen las siguientes cantidades? 
+
+(a) $1020\;\text{N}$ 
+
+(b) $5003\;\text{kg}$
+
+(c) $5.00 \;\text{m}$
+
+(d) $10 000 \;\text{km}$
+:::
+:::{.callout-note collapse="true"}
+## Solución 1.1.
+La cantidad $1020 \;\text{N}$, tiene 3 cifras significativas.
+
+La cantidad $5003 \;\text{kg}$, tiene 4 cifras significativas.
+
+La cantidad $5.00 \;\text{m}$, tiene 3 cifras significativas.
+
+La cantidad $10 000 \;\text{km}$, tiene una sola cifra significativa.
+:::
+
+:::{.callout-tip collapse="true"}
+* Para este curso, regularmente manejaremoslas cantidades a **3 cifras significativas.**
+* Nunca olvides escribir **las unidades** en las cantidades que lo requieren.
+:::
+***
+## Operaciones con cifras significativas
+### Multiplicación
+Cuando se multipliquen o dividan dos o más cantidades, el número de cifras en el resultado, debe ser igual al número de cifras de la cantidad con menor número de cifras significativas.
+
+### Suma o resta
+Cuando los números se sumen o resten, el número de lugares decimales en el resultado debe ser igual al número más pequeño de lugares decimales de cualquier término en la suma o resta.
+
+
+::: {.callout-note icon="false"}
+## Ejemplo 1.2.
+Realice las siguientes operaciones tomando en cuenta las cifras significativas de los valores iniciales.
+
+(a) $25.0\,\text{m}\times2.0\,\text{m}$
+
+(b) $\frac{4}{3}\pi(5.00\,\text{cm})^3$
+
+(c) $12.00\,\text{N}+0.001\,\text{N}$
+:::
+
+::: {.callout-note collapse="true"}
+## Solución 1.2.
+(a) $25.0\,\text{m}\times2.0\,\text{m}=5.0\times10^1\,\text{m}^2$
+
+Debemos escribir el resultado a dos cifras significativas y $50\,\text{m}^2$ tiene solo una, por ello usamos notación científica. Recuerda que las unidades también se multiplican.
+
+(b) $\frac{4}{3}\pi(5.00\,\text{cm})^3=524\,\text{cm}^3$
+
+Las cantidades dadas en fórmulas se consideran como exactas, es decir tanto $\frac{4}{3}$ como $\pi$ tienen cifras infinitas.
+
+(c) $12.00\,\text{N}+0.001\,\text{N}=12.001\,\text{N}$
+:::
+
+
+***
+## Conversión de unidades
+
+Una misma cantidad física puede expresarse en distintas unidades: una distancia puede darse en metros, kilómetros o millas. Todas son válidas, pero para hacer cálculos necesitamos que las unidades sean *consistentes*, y por eso muchas veces tendremos que **convertir** de una a otra. En este curso trabajaremos principalmente con el Sistema Internacional (SI): metro (m), kilogramo (kg) y segundo (s).
+
+### Factores de conversión
+
+Un **factor de conversión** es una fracción que relaciona dos unidades equivalentes. Por ejemplo, como $1\,\text{km}=1000\,\text{m}$, podemos escribir
+
+$$\frac{1000\,\text{m}}{1\,\text{km}}=1 \qquad \text{o bien} \qquad \frac{1\,\text{km}}{1000\,\text{m}}=1$$
+
+Como el numerador y el denominador representan *lo mismo*, la fracción vale 1, y multiplicar por ella **cambia las unidades sin cambiar la cantidad**.
+
+### Estrategia para convertir unidades
+
+```{mermaid}
+flowchart LR
+    A["1. Escribe la cantidad<br/>con su unidad"] --> B["2. Busca el factor de<br/>conversión necesario"]
+    B --> C["3. Acomódalo para que se<br/>cancele la unidad original"]
+    C --> D["4. Multiplica y revisa<br/>las cifras significativas"]
+```
+
+En forma de ecuación, la idea es:
+
+$$\text{cantidad deseada}=\text{cantidad dada}\times\frac{\text{unidad deseada}}{\text{unidad dada}}$$
+
+donde la unidad dada se cancela y solo queda la unidad deseada. 
+
+$$\text{cantidad deseada}=\cancel{\text{cantidad dada}}\times\frac{\text{unidad deseada}}{\cancel{\text{unidad dada}}}$$
+
+Si al final no te quedan las unidades que esperabas, revisa cómo acomodaste el factor.
+
+::: {.callout-note icon="false"}
+## Ejemplo 1.3.
+Un automóvil viaja a $72.0\,\frac{\text{km}}{\text{h}}$. Exprese su rapidez en $\frac{\text{m}}{\text{s}}$.
+:::
+
+::: {.callout-note collapse="true"}
+## Solución 1.3.
+Necesitamos convertir dos unidades: kilómetros a metros y horas a segundos. Acomodamos cada factor de modo que se cancele la unidad original:
+
+$$72.0\,\frac{\cancel{\text{km}}}{\cancel{\text{h}}}\left(\frac{1000\,\text{m}}{1\,\cancel{\text{km}}}\right)\left(\frac{1\,\cancel{\text{h}}}{3600\,\text{s}}\right)=20.0\,\frac{\text{m}}{\text{s}}$$
+
+Los factores $1000$ y $3600$ provienen de equivalencias exactas, por lo que no limitan las cifras significativas: el resultado conserva las 3 de $72.0$.
+:::
+
+::: {.callout-note icon="false"}
+## Ejemplo 1.4.
+La rapidez máxima en una carretera es de $65.0\,\frac{\text{mi}}{\text{h}}$. Exprésela en $\frac{\text{m}}{\text{s}}$.
+:::
+
+::: {.callout-note collapse="true"}
+## Solución 1.4.
+$$65.0\,\frac{\cancel{\text{mi}}}{\cancel{\text{h}}}\left(\frac{1609\,\text{m}}{1\,\cancel{\text{mi}}}\right)\left(\frac{1\,\cancel{\text{h}}}{3600\,\text{s}}\right)=29.1\,\frac{\text{m}}{\text{s}}$$
+:::
+
+### Factores de conversión más utilizados
+
+Las siguientes tablas reúnen las equivalencias que usaremos con más frecuencia. Las marcadas como *exactas* son definiciones; las demás son aproximadas.
+
+| Longitud | Masa | Tiempo |
+|:---------|:-----|:-------|
+| $1\,\text{km}=1000\,\text{m}$ | $1\,\text{kg}=1000\,\text{g}$ | $1\,\text{min}=60\,\text{s}$ |
+| $1\,\text{m}=100\,\text{cm}$ | $1\,\text{t}=1000\,\text{kg}$ | $1\,\text{h}=60\,\text{min}=3600\,\text{s}$ |
+| $1\,\text{cm}=10\,\text{mm}$ | $1\,\text{lb}=0.4536\,\text{kg}$ | $1\,\text{día}=24\,\text{h}=86\,400\,\text{s}$ |
+| $1\,\text{in}=2.54\,\text{cm}$ (exacta) | $1\,\text{oz}=28.35\,\text{g}$ | $1\,\text{año}\approx3.156\times10^{7}\,\text{s}$ |
+| $1\,\text{ft}=12\,\text{in}=0.3048\,\text{m}$ (exacta) | $1\,\text{slug}=14.59\,\text{kg}$ | |
+| $1\,\text{yd}=3\,\text{ft}=0.9144\,\text{m}$ (exacta) | $1\,\text{u}=1.661\times10^{-27}\,\text{kg}$ | |
+| $1\,\text{mi}=5280\,\text{ft}=1609\,\text{m}$ | | |
+
+: Equivalencias básicas de longitud, masa y tiempo. {#tbl-equivalencias}
+
+Otras equivalencias útiles son:
+
+| Cantidad | Equivalencia |
+|:---------|:-------------|
+| Rapidez | $1\,\frac{\text{km}}{\text{h}}=0.2778\,\frac{\text{m}}{\text{s}}$; $\quad1\,\frac{\text{mi}}{\text{h}}=0.4470\,\frac{\text{m}}{\text{s}}$ |
+| Área | $1\,\text{m}^2=10^{4}\,\text{cm}^2$ |
+| Volumen | $1\,\text{m}^3=10^{6}\,\text{cm}^3$; $\quad1\,\text{L}=1000\,\text{cm}^3=10^{-3}\,\text{m}^3$ |
+
+::: {.callout-warning}
+## Cuidado
+Al convertir unidades elevadas a una potencia, el factor también se eleva. Por ejemplo, $1\,\text{m}^2=(100\,\text{cm})^2=10^4\,\text{cm}^2$, **no** $100\,\text{cm}^2$.
+:::
+
+### Prefijos del SI
+
+Para no escribir potencias de diez en cada cantidad, el SI usa prefijos que se anteponen a la unidad.
+
+| Prefijo | Símbolo | Factor | Ejemplo |
+|:--------|:-------:|:------:|:--------|
+| giga | G | $10^{9}$ | $1\,\text{GHz}=10^{9}\,\text{Hz}$ |
+| mega | M | $10^{6}$ | $1\,\text{MW}=10^{6}\,\text{W}$ |
+| kilo | k | $10^{3}$ | $1\,\text{km}=10^{3}\,\text{m}$ |
+| centi | c | $10^{-2}$ | $1\,\text{cm}=10^{-2}\,\text{m}$ |
+| mili | m | $10^{-3}$ | $1\,\text{mm}=10^{-3}\,\text{m}$ |
+| micro | $\mu$ | $10^{-6}$ | $1\,\mu\text{m}=10^{-6}\,\text{m}$ |
+| nano | n | $10^{-9}$ | $1\,\text{nm}=10^{-9}\,\text{m}$ |
+
+: Prefijos más comunes del Sistema Internacional. {#tbl-prefijos}
+
+::: {.callout-tip collapse="true"}
+* Escribe siempre las unidades en cada paso del cálculo; son tu mejor herramienta para detectar errores.
+* Convierte **antes** de sustituir en una fórmula, de modo que todas las cantidades estén en el mismo sistema de unidades.
+:::
+
+***

@@ -1,0 +1,182 @@
+---
+title: Aritmética vectorial
+---
+
+Ya sabemos qué es un vector y cómo escribirlo. Ahora aprenderemos a **operar** con ellos: sumarlos, restarlos y multiplicarlos por un número. Estas operaciones no funcionan igual que con los escalares, porque la dirección también cuenta, pero siguen reglas sencillas que podemos ver de dos maneras equivalentes: **gráficamente** (dibujando flechas) y **analíticamente** (operando con componentes).
+
+***
+## Suma de vectores
+Para sumar dos vectoresm no basta con sumar sus magnitudes, sino que hay que considerar su dirección. La suma de dos vectores $\vec{A}$ y $\vec{B}$ se llama **vector resultante** y se escribe $$\vec{R}=\vec{A}+\vec{B}$$.
+### Método gráfico
+
+Para sumar $\vec{A}$ y $\vec{B}$ gráficamente se usa el método de **cabeza a cola**:
+
+1. Dibuja $\vec{A}$ con la longitud y orientación correctas.
+2. Dibuja $\vec{B}$ de modo que su **cola** (el inicio de la flecha) coincida con la **cabeza** (la punta) de $\vec{A}$.
+3. El vector **suma** o **resultante**, $\vec{R}=\vec{A}+\vec{B}$, es la flecha que va desde la cola de $\vec{A}$ hasta la cabeza de $\vec{B}$.
+
+{{< placeholder width="50%" >}}
+<!-- FIGURA: suma de dos vectores por el método de cabeza a cola, mostrando A, B y la resultante R -->
+
+Otra forma de verlo es el **método del paralelogramo**: se dibujan $\vec{A}$ y $\vec{B}$ con la misma cola y se completa el paralelogramo; la resultante es la diagonal que parte de esa cola común.
+
+{{< placeholder width="50%" >}}
+<!-- FIGURA: método del paralelogramo para A + B -->
+
+La suma de vectores cumple dos propiedades que conocemos de los números:
+
+* **Conmutativa:** $\vec{A}+\vec{B}=\vec{B}+\vec{A}$. El orden no altera el resultado.
+* **Asociativa:** $(\vec{A}+\vec{B})+\vec{C}=\vec{A}+(\vec{B}+\vec{C})$. Podemos agrupar como queramos, lo que permite sumar tantos vectores como se necesite colocándolos uno tras otro, de cabeza a cola.
+
+{{< placeholder width >}}
+<!-- FIGURA: conmutatividad, A + B y B + A llegan al mismo punto -->
+
+### Método analítico (por componentes)
+
+Dibujar es útil para entender, pero para obtener números precisos conviene sumar **componente a componente**. Si
+
+$$\vec{A}=A_x\,\hat{\imath}+A_y\,\hat{\jmath} \qquad \text{y} \qquad \vec{B}=B_x\,\hat{\imath}+B_y\,\hat{\jmath}$$
+
+entonces
+
+$$\vec{R}=\vec{A}+\vec{B}=(A_x+B_x)\,\hat{\imath}+(A_y+B_y)\,\hat{\jmath}$$
+
+Es decir, las componentes en $x$ se suman con las componentes en $x$, y las de $y$ con las de $y$:
+
+$$R_x=A_x+B_x \qquad\qquad R_y=A_y+B_y$$
+
+Después, con las fórmulas de la sección anterior obtenemos la magnitud y el ángulo de $\vec{R}$.
+
+::: {.callout-note appearance="simple"}
+**La magnitud de la suma no es la suma de las magnitudes.** En general, $|\vec{A}+\vec{B}|\neq|\vec{A}|+|\vec{B}|$. Solo son iguales cuando ambos vectores apuntan en la misma dirección.
+:::
+
+::: {.callout-note icon="false"}
+## Ejemplo 1.8.
+Una persona camina $40.0\,\text{m}$ hacia el este y después $30.0\,\text{m}$ hacia el norte. Determine su desplazamiento total, es decir, la magnitud y la dirección del vector resultante.
+:::
+
+::: {.callout-note collapse="true"}
+## Solución 1.8.
+Tomamos el este como el eje $x$ positivo y el norte como el eje $y$ positivo:
+
+$$\vec{d}_1=40.0\,\hat{\imath}\;\text{m} \qquad\qquad \vec{d}_2=30.0\,\hat{\jmath}\;\text{m}$$
+
+Sumamos por componentes:
+
+$$\vec{R}=\vec{d}_1+\vec{d}_2=\left(40.0\,\hat{\imath}+30.0\,\hat{\jmath}\right)\text{m}$$
+
+Su magnitud y su ángulo son
+
+$$R=\sqrt{(40.0\,\text{m})^2+(30.0\,\text{m})^2}=50.0\,\text{m}$$
+
+$$\theta=\tan^{-1}\!\left(\frac{30.0}{40.0}\right)=36.9^\circ$$
+
+El desplazamiento es de $50.0\,\text{m}$ a $36.9^\circ$ al norte del este. Observa que la persona caminó una **distancia** de $70.0\,\text{m}$, pero su **desplazamiento** tiene una magnitud menor, de $50.0\,\text{m}$.
+:::
+
+***
+## Multiplicación de un vector por un escalar
+
+Al multiplicar un vector $\vec{A}$ por un escalar $c$ obtenemos un nuevo vector, $c\vec{A}$, cuyas características dependen del valor de $c$:
+
+* Su **magnitud** es $|c|$ veces la de $\vec{A}$: $\;|c\vec{A}|=|c|\,|\vec{A}|$.
+* Si $c>0$, tiene la **misma dirección** que $\vec{A}$.
+* Si $c<0$, tiene la **dirección opuesta**.
+* Si $c=0$, se obtiene el **vector cero**, $\vec{0}$, que tiene magnitud cero.
+
+Por ejemplo, $2\vec{A}$ es un vector del doble de largo que $\vec{A}$ y en la misma dirección, mientras que $-\tfrac{1}{2}\vec{A}$ tiene la mitad de su longitud y apunta en sentido contrario.
+
+{{< placeholder width="50%" >}}
+<!-- FIGURA: un vector A junto con 2A y -A/2 -->
+
+En componentes, el escalar multiplica cada una de ellas:
+
+$$c\,\vec{A}=cA_x\,\hat{\imath}+cA_y\,\hat{\jmath}$$
+
+::: {.callout-note appearance="simple"}
+Si el escalar tiene unidades, el resultado cambia de naturaleza física. Por ejemplo, multiplicar una velocidad por un tiempo da un desplazamiento: $\vec{d}=\vec{v}\,t$. El vector resultante sigue la regla anterior, pero ahora sus unidades son de longitud.
+:::
+
+::: {.callout-note icon="false"}
+## Ejemplo 1.9.
+Sea $\vec{v}=\left(2.00\,\hat{\imath}-3.00\,\hat{\jmath}\right)\,\frac{\text{m}}{\text{s}}$. Calcule (a) $3\vec{v}$ y (b) $-0.500\,\vec{v}$, y compare las magnitudes con la de $\vec{v}$.
+:::
+
+::: {.callout-note collapse="true"}
+## Solución 1.9.
+(a) $3\vec{v}=\left(6.00\,\hat{\imath}-9.00\,\hat{\jmath}\right)\,\frac{\text{m}}{\text{s}}$
+
+(b) $-0.500\,\vec{v}=\left(-1.00\,\hat{\imath}+1.50\,\hat{\jmath}\right)\,\frac{\text{m}}{\text{s}}$
+
+La magnitud de $\vec{v}$ es $|\vec{v}|=\sqrt{2.00^2+(-3.00)^2}=3.61\,\frac{\text{m}}{\text{s}}$. Entonces $|3\vec{v}|=10.8\,\frac{\text{m}}{\text{s}}$ (tres veces mayor) y $|-0.500\,\vec{v}|=1.80\,\frac{\text{m}}{\text{s}}$ (la mitad), este último apuntando en sentido contrario a $\vec{v}$.
+:::
+
+***
+## El negativo de un vector
+
+El **negativo** de un vector $\vec{A}$, escrito $-\vec{A}$, es el vector con la **misma magnitud** pero **sentido opuesto**. Es el caso particular de multiplicar por el escalar $c=-1$:
+
+$$-\vec{A}=(-1)\,\vec{A}=-A_x\,\hat{\imath}-A_y\,\hat{\jmath}$$
+
+{{< placeholder width >}}
+<!-- FIGURA: un vector A y su negativo -A -->
+
+Gráficamente, $-\vec{A}$ es la misma flecha que $\vec{A}$ pero girada $180^\circ$. Al sumarlos, se anulan:
+
+$$\vec{A}+(-\vec{A})=\vec{0}$$
+
+Por eso al negativo también se le llama el vector **opuesto** o **inverso aditivo** de $\vec{A}$.
+
+***
+## Resta de vectores
+
+Restar un vector es lo mismo que **sumar su negativo**:
+
+$$\vec{A}-\vec{B}=\vec{A}+(-\vec{B})$$
+
+### Método gráfico
+
+Para obtener $\vec{A}-\vec{B}$ se dibuja $-\vec{B}$ (la flecha de $\vec{B}$ invertida) y se suma a $\vec{A}$ con el método de cabeza a cola.
+
+{{< placeholder width >}}
+<!-- FIGURA: resta de vectores A - B, construida como A + (-B) -->
+
+Una forma práctica de visualizarla: si $\vec{A}$ y $\vec{B}$ se dibujan con la misma cola, el vector $\vec{A}-\vec{B}$ es la flecha que va desde la **cabeza de $\vec{B}$ hasta la cabeza de $\vec{A}$**.
+
+{{< placeholder width >}}
+<!-- FIGURA: A y B con la misma cola, y A - B uniendo sus cabezas -->
+
+### Método analítico
+
+Restamos componente a componente:
+
+$$\vec{A}-\vec{B}=(A_x-B_x)\,\hat{\imath}+(A_y-B_y)\,\hat{\jmath}$$
+
+::: {.callout-warning}
+A diferencia de la suma, la resta **no es conmutativa**: $\vec{A}-\vec{B}=-(\vec{B}-\vec{A})$, es decir, invertir el orden da el vector opuesto.
+:::
+
+::: {.callout-note icon="false"}
+## Ejemplo 1.10.
+Dados $\vec{A}=\left(5.00\,\hat{\imath}+2.00\,\hat{\jmath}\right)\text{m}$ y $\vec{B}=\left(2.00\,\hat{\imath}+6.00\,\hat{\jmath}\right)\text{m}$, calcule $\vec{A}-\vec{B}$ y determine su magnitud y su dirección.
+:::
+
+::: {.callout-note collapse="true"}
+## Solución 1.10.
+Restamos las componentes correspondientes:
+
+$$\vec{A}-\vec{B}=\left[(5.00-2.00)\,\hat{\imath}+(2.00-6.00)\,\hat{\jmath}\right]\text{m}=\left(3.00\,\hat{\imath}-4.00\,\hat{\jmath}\right)\text{m}$$
+
+Magnitud:
+
+$$|\vec{A}-\vec{B}|=\sqrt{(3.00\,\text{m})^2+(-4.00\,\text{m})^2}=5.00\,\text{m}$$
+
+Ángulo: como $A_x>0$ y $A_y<0$, el vector está en el cuarto cuadrante y la calculadora da directamente el valor correcto,
+
+$$\theta=\tan^{-1}\!\left(\frac{-4.00}{3.00}\right)=-53.1^\circ$$
+
+es decir, $53.1^\circ$ **por debajo** del eje $x$ positivo. Por cierto, $\vec{B}-\vec{A}=\left(-3.00\,\hat{\imath}+4.00\,\hat{\jmath}\right)\text{m}$ tiene la misma magnitud pero apunta en sentido opuesto.
+:::
+
+***

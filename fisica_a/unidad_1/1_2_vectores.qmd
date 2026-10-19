@@ -1,0 +1,148 @@
+---
+title: Vectores
+---
+
+Imagina que un piloto te dice que su avión vuela a $800\,\frac{\text{km}}{\text{h}}$. ¿Llegará a su destino? Con ese dato no alcanza: también necesitamos saber **hacia dónde** vuela. Lo mismo pasa con una fuerza al empujar una caja, con la velocidad de una pelota o con el viento sobre un velero. En física, muchas cantidades importantes requieren un número, una unidad y una **dirección**. A estas cantidades las llamamos **vectores**, y son el lenguaje que usaremos para describir el movimiento y las fuerzas a lo largo de todo el curso.
+
+Gráficamente representamos un vector como una flecha, y analíticamente hay varias maneras de escribirlo. En esta sección veremos qué es un vector, cómo se representa y cómo trabajar con él.
+
+***
+## Cantidades escalares vs. cantidades vectoriales
+
+### Cantidades escalares
+
+Algunas cantidades quedan completamente descritas con un número y una unidad: la masa de un costal de harina, la temperatura de una habitación o el tiempo que tarda en hervir el agua. A estas cantidades se les llama **escalares**, y solo tienen **magnitud**.
+
+Con los escalares trabajamos con las reglas del álgebra de siempre, siempre que tengan las mismas unidades. Si mezclas $2.5\,\text{kg}$ de arena con $1.5\,\text{kg}$ de cemento, la mezcla tiene una masa de $4.0\,\text{kg}$. Si cada ladrillo de una pila pesa $3.0\,\text{kg}$ y apilas 6, la masa total es $6\,(3.0\,\text{kg})=18\,\text{kg}$: multiplicar por un número solo cambia el valor de la cantidad, no su naturaleza.
+
+Los escalares de distinta naturaleza también pueden combinarse para dar lugar a otro escalar. Por ejemplo, si un ciclista recorre $36\,\text{km}$ en $2.0\,\text{h}$, su rapidez media es
+
+$$\frac{36\,\text{km}}{2.0\,\text{h}}=18\,\frac{\text{km}}{\text{h}}=5.0\,\frac{\text{m}}{\text{s}}$$
+
+y la rapidez es una cantidad escalar derivada de dividir la distancia entre el tiempo.
+
+### Cantidades vectoriales
+
+Una cantidad **vectorial** tiene magnitud **y** dirección. La velocidad, la fuerza y el desplazamiento son ejemplos. Son útiles porque en muchas ocasiones, para sumar ciertas cantidades, necesitamos saber hacia dónde apuntan: dos fuerzas de $5\,\text{N}$ pueden sumar $10\,\text{N}$, $0\,\text{N}$ o algo intermedio, según su dirección.
+
+::: {.callout-note appearance="simple"}
+**Rapidez y velocidad no son lo mismo.** La *rapidez* es un escalar (solo dice qué tan rápido); la *velocidad* es un vector (dice qué tan rápido y hacia dónde). Lo mismo ocurre con *distancia recorrida* (escalar) y *desplazamiento* (vector).
+:::
+
+Un ejemplo sencillo donde es necesario considerar la naturaleza vectorial de las cantidades es el siguiente.
+
+:::{.callout-note icon="false"} 
+## Ejemplo 1.5.
+Una lancha se encuentra en un río cuya corriente es de $1.00\,\frac{\text{km}}{\text{h}}$ hacia el norte. El viento sopla hacia el sur con una rapidez de $5.00\,\frac{\text{km}}{\text{h}}$ y empuja la lancha mediante su vela en esa misma dirección. ¿En qué dirección se moverá la lancha y con qué rapidez?
+:::
+
+:::{.callout-note collapse="true"}
+## Solución 1.5.
+Las dos influencias apuntan en direcciones opuestas, así que no podemos simplemente sumar $1.00+5.00$. Elegimos el norte como el sentido positivo:
+
+$$1.00\,\frac{\text{km}}{\text{h}}+\left(-5.00\,\frac{\text{km}}{\text{h}}\right)=-4.00\,\frac{\text{km}}{\text{h}}$$
+
+El signo negativo indica que la lancha se mueve hacia el **sur**, con una rapidez de $4.00\,\frac{\text{km}}{\text{h}}$.
+:::
+
+***
+## ¿Cómo se representan los vectores?
+
+### Representación gráfica y notación
+
+Un vector se dibuja como una **flecha**:
+
+* la **longitud** de la flecha representa la magnitud (a escala);
+* la **orientación** de la flecha indica la dirección;
+* la **punta** señala el sentido.
+
+Para distinguir un vector de un escalar, lo escribimos con una flecha sobre la letra, $\vec{A}$ (en algunos libros se usa negrita, $\mathbf{A}$). Su magnitud se escribe $|\vec{A}|$ o simplemente $A$, y siempre es un número positivo con sus unidades.
+
+Dos vectores son **iguales** si tienen la misma magnitud y la misma dirección, sin importar en qué lugar estén dibujados. El vector **opuesto** a $\vec{A}$, escrito $-\vec{A}$, tiene la misma magnitud pero sentido contrario.
+
+### Vectores en el plano cartesiano
+
+Para describir un vector con números, lo colocamos en un sistema de coordenadas. Si ponemos su origen en $(0,0)$, la punta de la flecha nos da sus **componentes**: $A_x$ es lo que avanza en el eje $x$ y $A_y$ lo que avanza en el eje $y$. Estas componentes pueden ser positivas, negativas o cero.
+
+![**Figura 1.1.** Un vector $\vec{A}$ en el plano, con sus componentes $A_x$ y $A_y$ y el ángulo $\theta$ medido desde el eje $x$ positivo.](Figs%201/vector_componentes.svg){fig-align="center" width="60%" #fig-componentes}
+
+Una manera de escribir el vector es con sus componentes entre paréntesis:
+
+$$\vec{A}=(A_x,\,A_y)$$
+
+### Vectores unitarios
+
+Un **vector unitario** es un vector de magnitud igual a 1 y sin unidades; su único trabajo es indicar una dirección. Se escriben con un "gorrito" $^{\wedge}$ en lugar de una flecha. Los más importantes son los que apuntan a lo largo de los ejes:
+
+| Vector unitario | Dirección |
+|:---------------:|:----------|
+| $\hat{\imath}$ | eje $x$ positivo |
+| $\hat{\jmath}$ | eje $y$ positivo |
+| $\hat{k}$ | eje $z$ positivo (cuando trabajemos en 3D) |
+
+Con ellos, cualquier vector en el plano se escribe como la suma de sus componentes, cada una multiplicada por su vector unitario:
+
+$$\vec{A}=A_x\,\hat{\imath}+A_y\,\hat{\jmath}$$
+
+Esta es la **notación de vectores unitarios**. Por ejemplo, $\vec{A}=3\,\hat{\imath}+4\,\hat{\jmath}$ significa "avanza 3 unidades en $x$ y 4 en $y$".
+
+También podemos obtener un vector unitario en la dirección de *cualquier* vector, dividiéndolo entre su magnitud:
+
+$$\hat{A}=\frac{\vec{A}}{|\vec{A}|}$$
+
+### Magnitud, dirección y componentes
+
+Un vector puede darse de dos formas equivalentes: por sus **componentes** ($A_x$, $A_y$) o por su **magnitud y ángulo** ($A$, $\theta$), con $\theta$ medido desde el eje $x$ positivo, en sentido contrario a las manecillas del reloj. En la @fig-componentes se forma un triángulo rectángulo, así que pasamos de una forma a otra con trigonometría:
+
+| De magnitud y ángulo a componentes | De componentes a magnitud y ángulo |
+|:----------------------------------:|:----------------------------------:|
+| $A_x=A\cos\theta$ | $A=\sqrt{A_x^2+A_y^2}$ |
+| $A_y=A\sin\theta$ | $\theta=\tan^{-1}\!\left(\dfrac{A_y}{A_x}\right)$ |
+
+::: {.callout-warning}
+## Cuidado
+Cuando calculamos $\tan^{-1}$ en nuestra calculadora, el resultado simpre será dentro de $-90^{\circ}$ a $90^{\circ}$, por lo que no distingue el cuadrante donde se encuentra el vector. Antes de calcular el ángulo, fíjate en los signos de $A_x$ y $A_y$, o bien traza el dibujo del vector.
+:::
+
+::: {.callout-warning}
+## Cuidado por dos
+El error número uno a la hora de calcular ángulos es que la calculadora está en radianes. Asegúrate que al realizar operaciones con funciones trigonométricas, tu calculadora esté en modo de grados.
+Esto lo puedes ver como una D en la pantalla de tu calculadora, o bien en el menú de configuración.
+![**Figura 1.2.** La D en la pantalla de tu calculadora significa que está en modo de grados](Figs%201/image.png){fig-align="center" width="60%" #pantalla-calculadora}
+:::
+
+::: {.callout-note icon="false"}
+## Ejemplo 1.6.
+Un desplazamiento tiene una magnitud de $10.0\,\text{m}$ y forma un ángulo de $30.0^\circ$ con el eje $x$ positivo. Escríbalo en notación de vectores unitarios.
+:::
+
+::: {.callout-note collapse="true"}
+## Solución 1.6.
+$$d_x=(10.0\,\text{m})\cos 30.0^\circ=8.66\,\text{m}$$
+
+$$d_y=(10.0\,\text{m})\sin 30.0^\circ=5.00\,\text{m}$$
+
+Por lo tanto,
+
+$$\vec{d}=\left(8.66\,\hat{\imath}+5.00\,\hat{\jmath}\right)\text{m}$$
+:::
+
+::: {.callout-note icon="false"}
+## Ejemplo 1.7.
+Sea el vector $\vec{A}=\left(-3.00\,\hat{\imath}+4.00\,\hat{\jmath}\right)\text{m}$. Determine (a) su magnitud, (b) su ángulo respecto al eje $x$ positivo y (c) el vector unitario en su dirección.
+:::
+
+::: {.callout-note collapse="true"}
+## Solución 1.7.
+(a) $A=\sqrt{(-3.00\,\text{m})^2+(4.00\,\text{m})^2}=5.00\,\text{m}$
+
+(b) La calculadora da $\tan^{-1}\!\left(\frac{4.00}{-3.00}\right)=-53.1^\circ$. Como $A_x<0$ y $A_y>0$, el vector está en el segundo cuadrante, así que sumamos $180^\circ$:
+
+$$\theta=-53.1^\circ+180^\circ=127^\circ$$
+
+(c) $\hat{A}=\dfrac{\vec{A}}{A}=\dfrac{-3.00\,\hat{\imath}+4.00\,\hat{\jmath}}{5.00}=-0.600\,\hat{\imath}+0.800\,\hat{\jmath}$
+
+Observa que $\hat{A}$ no tiene unidades y que su magnitud es $\sqrt{0.600^2+0.800^2}=1$.
+:::
+
+***
