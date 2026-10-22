@@ -12,40 +12,42 @@ Te recomiendo **intentar cada problema antes de abrir la solución**. Equivocart
 5. **Calcula** sin redondear los resultados intermedios.
 6. **Revisa el resultado**: ¿tiene las unidades correctas, las cifras significativas adecuadas y un valor razonable? Si es un vector, ¿la dirección coincide con tu dibujo?
 :::
-
-::: {.callout-note icon="false"}
 ## Resumen de la unidad
-
-**Cifras significativas**
+::: {.callout-note icon="false"}
+## Cifras significativas
 
 * Los dígitos distintos de cero y los ceros entre ellos son significativos; los ceros a la izquierda no lo son. Usa notación científica para evitar ambigüedades: $1.50\times10^3$ tiene 3 cifras.
 * **Multiplicación y división:** el resultado lleva tantas cifras significativas como el dato que tenga *menos* cifras.
 * **Suma y resta:** el resultado lleva tantos decimales como el dato que tenga *menos* decimales.
 * Los números exactos (factores de conversión definidos, constantes como $\pi$ o $\tfrac{4}{3}$) no limitan las cifras significativas.
+:::
 
-**Conversión de unidades**
+::: {.callout-note icon="false"}
+## Conversión de unidades
 
 $$\text{cantidad deseada}=\text{cantidad dada}\times\frac{\text{unidad deseada}}{\text{unidad dada}}$$
 
 * Acomoda cada factor de conversión para que la unidad original se cancele.
 * Si la unidad está elevada a una potencia, el factor también: $1\,\text{m}^2=10^{4}\,\text{cm}^2$ y $1\,\text{m}^3=10^{6}\,\text{cm}^3$.
 * Equivalencias frecuentes: $1\,\frac{\text{m}}{\text{s}}=3.6\,\frac{\text{km}}{\text{h}}$, $\;1\,\text{in}=2.54\,\text{cm}$, $\;1\,\text{mi}=1609\,\text{m}$, $\;1\,\text{L}=10^{-3}\,\text{m}^3$.
+:::
 
-**Vectores**
+::: {.callout-note icon="false"}
+## Vectores
 
-Sea $c$ cualquier escalar, y $\vec{A}$ y $\vec{B}$ dos vectores cuya notación en componentes es
+Sea $c$ cualquier escalar, y $\vec{\textbf{A}}$ y $\vec{\textbf{B}}$ dos vectores cuya notación en componentes es
 
-$$\vec{A}=A_x\,\hat{\imath}+A_y\,\hat{\jmath}+A_z\,\hat{k} \qquad\qquad \vec{B}=B_x\,\hat{\imath}+B_y\,\hat{\jmath}+B_z\,\hat{k}$$
+$$\vec{\textbf{A}}=A_x\,\hat{\imath}+A_y\,\hat{\jmath}+A_z\,\hat{k} \qquad\qquad \vec{\textbf{B}}=B_x\,\hat{\imath}+B_y\,\hat{\jmath}+B_z\,\hat{k}$$
 
 las operaciones vectoriales básicas son:
 
 | Operación | Fórmula |
 |:----------|:--------|
-| Suma | $\vec{A}+\vec{B}=(A_x+B_x)\,\hat{\imath}+(A_y+B_y)\,\hat{\jmath}+(A_z+B_z)\,\hat{k}$ |
-| Resta | $\vec{A}-\vec{B}=(A_x-B_x)\,\hat{\imath}+(A_y-B_y)\,\hat{\jmath}+(A_z-B_z)\,\hat{k}$ |
-| Multiplicación por un escalar | $c\vec{A}=cA_x\,\hat{\imath}+cA_y\,\hat{\jmath}+cA_z\,\hat{k}$ |
-| Magnitud | $\lvert\vec{A}\rvert=\sqrt{A_x^2+A_y^2+A_z^2}$ |
-| Vector unitario | $\hat{A}=\dfrac{\vec{A}}{\lvert\vec{A}\rvert}$ |
+| Suma | $\vec{\textbf{A}}+\vec{\textbf{B}}=(A_x+B_x)\,\hat{\imath}+(A_y+B_y)\,\hat{\jmath}$ |
+| Resta | $\vec{\textbf{A}}-\vec{\textbf{B}}=(A_x-B_x)\,\hat{\imath}+(A_y-B_y)\,\hat{\jmath}$ |
+| Multiplicación por un escalar | $c\vec{\textbf{A}}=cA_x\,\hat{\imath}+cA_y\,\hat{\jmath}$ |
+| Magnitud | $\lvert\vec{\textbf{A}}\rvert=\sqrt{A_x^2+A_y^2}$ |
+| Vector unitario | $\hat{\textbf{A}}=\dfrac{\vec{\textbf{A}}}{\lvert\vec{\textbf{A}}\rvert}$ |
 
 En el plano ($A_z=0$), un vector de magnitud $A$ y ángulo $\theta$ medido desde el eje $+x$ cumple
 
@@ -56,8 +58,9 @@ revisando siempre el cuadrante con los signos de $A_x$ y $A_y$.
 
 ***
 
-## Problema 1.1.
-Una placa rectangular de acero mide $21.3\,\text{cm}$ de largo, $9.80\,\text{cm}$ de ancho y $0.250\,\text{cm}$ de espesor. Calcule, respetando las cifras significativas:
+## Problemas
+
+**1.1** Una placa rectangular de acero mide $21.3\,\text{cm}$ de largo, $9.80\,\text{cm}$ de ancho y $0.250\,\text{cm}$ de espesor. Calcule, respetando las cifras significativas:
 
 (a) el perímetro de la cara superior,
 
@@ -91,10 +94,8 @@ $$52.2\,\cancel{\text{cm}^3}\left(\frac{1\,\text{m}}{100\,\cancel{\text{cm}}}\ri
 Observa que el resultado conserva 3 cifras significativas; la notación científica solo cambia la forma de escribirlo.
 :::
 
-***
 
-## Problema 1.2.
-La densidad del acero estructural es de $7.85\,\frac{\text{g}}{\text{cm}^3}$. Una viga de acero mide $3.00\,\text{m}$ de largo y su sección transversal tiene un área de $20.0\,\text{cm}^2$.
+**1.2.** La densidad del acero estructural es de $7.85\,\frac{\text{g}}{\text{cm}^3}$. Una viga de acero mide $3.00\,\text{m}$ de largo y su sección transversal tiene un área de $20.0\,\text{cm}^2$.
 
 (a) Exprese la densidad del acero en $\frac{\text{kg}}{\text{m}^3}$.
 
@@ -124,11 +125,7 @@ $$m=\rho V=\left(7.85\times10^{3}\,\frac{\text{kg}}{\cancel{\text{m}^3}}\right)(
 **¿Es razonable?** Una viga de 3 m que puede cargar una persona fuerte (con algo de esfuerzo) tiene sentido para una sección de apenas $20\,\text{cm}^2$.
 :::
 
-***
-
-
-## Problema 1.3.
-Un velocista recorre $100.0\,\text{yd}$ en $9.50\,\text{s}$. Determine su rapidez media en $\frac{\text{m}}{\text{s}}$ y en $\frac{\text{km}}{\text{h}}$.
+**1.3.** Un velocista recorre $100.0\,\text{yd}$ en $9.50\,\text{s}$. Determine su rapidez media en $\frac{\text{m}}{\text{s}}$ y en $\frac{\text{km}}{\text{h}}$.
 ***
 
 ::::: {.callout-note collapse="true"}
@@ -150,12 +147,7 @@ $$9.6253\,\frac{\cancel{\text{m}}}{\cancel{\text{s}}}\left(\frac{1\,\text{km}}{1
 :::
 :::::
 
-***
-
-
-
-## Problema 1.4.
-Un dron de inspección se desplaza $250\,\text{m}$ en dirección $35.0^\circ$ al norte del oeste. Tomando el este como $+x$ y el norte como $+y$:
+**1.4.** Un dron de inspección se desplaza $250\,\text{m}$ en dirección $35.0^\circ$ al norte del oeste. Tomando el este como $+x$ y el norte como $+y$:
 
 (a) Determine las componentes del desplazamiento.
 
@@ -190,12 +182,7 @@ $$\hat{d}=\frac{\vec{d}}{d}=\frac{-204.8\,\hat{\imath}+143.4\,\hat{\jmath}}{250}
 **Comprobación:** $\sqrt{(-0.819)^2+(0.574)^2}=1.00$, como debe ser para un vector unitario. Observa además que $\hat{d}=\cos145^\circ\,\hat{\imath}+\sin145^\circ\,\hat{\jmath}$: las componentes de un vector unitario son siempre el coseno y el seno de su ángulo.
 :::
 
-***
-
-
-
-## Problema 1.5.
-Una topógrafa recorre tres tramos sobre un terreno plano:
+**1.5.** Una topógrafa recorre tres tramos sobre un terreno plano:
 
 * $\vec{d}_1$: $4.00\,\text{km}$ hacia el este,
 * $\vec{d}_2$: $3.00\,\text{km}$ a $30.0^\circ$ al norte del oeste,
@@ -237,10 +224,7 @@ $$4.00\,\text{km}+3.00\,\text{km}+2.50\,\text{km}=9.50\,\text{km}$$
 
 La topógrafa caminó $9.50\,\text{km}$, pero terminó a solo $1.72\,\text{km}$ del punto de partida.
 :::
-
-
-## Problema 1.6.
-Dos cables sujetan un poste. El cable 1 ejerce una fuerza de $600\,\text{N}$ a $30.0^\circ$ y el cable 2 una fuerza de $400\,\text{N}$ a $135^\circ$, ambos ángulos medidos desde el eje $+x$.
+**1.6.** Dos cables sujetan un poste. El cable 1 ejerce una fuerza de $600\,\text{N}$ a $30.0^\circ$ y el cable 2 una fuerza de $400\,\text{N}$ a $135^\circ$, ambos ángulos medidos desde el eje $+x$.
 
 (a) Determine la fuerza resultante $\vec{R}=\vec{F}_1+\vec{F}_2$ (magnitud y dirección).
 
@@ -278,9 +262,8 @@ Tiene la misma magnitud que $\vec{R}$, $629\,\text{N}$, y apunta en sentido opue
 $$\theta_3=67.9^\circ+180^\circ=248^\circ$$
 :::
 
-***
 
-## Problema 1.7.
+**1.7.** Un automóvil da vuelta en una esquina. Antes de la vuelta su velocidad es de $20.0\,\frac{\text{m}}{\text{s}}$ hacia el este y después de ella es de $15.0\,\frac{\text{m}}{\text{s}}$ hacia el norte. Determine el **cambio de velocidad** $\Delta\vec{v}=\vec{v}_f-\vec{v}_i$ (magnitud y dirección).
 Un automóvil da vuelta en una esquina. Antes de la vuelta su velocidad es de $20.0\,\frac{\text{m}}{\text{s}}$ hacia el este y después de ella es de $15.0\,\frac{\text{m}}{\text{s}}$ hacia el norte. Determine el **cambio de velocidad** $\Delta\vec{v}=\vec{v}_f-\vec{v}_i$ (magnitud y dirección).
 
 
@@ -311,9 +294,7 @@ es decir, $36.9^\circ$ **al norte del oeste**.
 **Observación importante:** la rapidez del auto solo bajó de $20.0$ a $15.0\,\frac{\text{m}}{\text{s}}$, pero el cambio de velocidad tiene una magnitud de $25.0\,\frac{\text{m}}{\text{s}}$. Cambiar de dirección también es cambiar de velocidad; esta idea será clave cuando estudiemos la aceleración.
 :::
 
-***
-
-## Problema 1.8.
+**1.8.** Dados los vectores $\vec{A}=\left(3.00\,\hat{\imath}-2.00\,\hat{\jmath}\right)\text{m}$ y $\vec{B}=\left(-1.00\,\hat{\imath}+4.00\,\hat{\jmath}\right)\text{m}$, calcule:
 Dados los vectores $\vec{A}=\left(3.00\,\hat{\imath}-2.00\,\hat{\jmath}\right)\text{m}$ y $\vec{B}=\left(-1.00\,\hat{\imath}+4.00\,\hat{\jmath}\right)\text{m}$, calcule:
 
 (a) $\vec{C}=2\vec{A}-3\vec{B}$,
