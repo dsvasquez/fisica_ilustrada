@@ -390,14 +390,13 @@ window.Quarto = {
   <ul>
   <li><a href="#suma-de-vectores" id="toc-suma-de-vectores" class="nav-link active" data-scroll-target="#suma-de-vectores">Suma de vectores</a>
   <ul class="collapse">
-  <li><a href="#método-gráfico" id="toc-método-gráfico" class="nav-link" data-scroll-target="#método-gráfico">Método gráfico</a></li>
   <li><a href="#método-analítico-por-componentes" id="toc-método-analítico-por-componentes" class="nav-link" data-scroll-target="#método-analítico-por-componentes">Método analítico (por componentes)</a></li>
   </ul></li>
   <li><a href="#multiplicación-de-un-vector-por-un-escalar" id="toc-multiplicación-de-un-vector-por-un-escalar" class="nav-link" data-scroll-target="#multiplicación-de-un-vector-por-un-escalar">Multiplicación de un vector por un escalar</a></li>
   <li><a href="#el-negativo-de-un-vector" id="toc-el-negativo-de-un-vector" class="nav-link" data-scroll-target="#el-negativo-de-un-vector">El negativo de un vector</a></li>
   <li><a href="#resta-de-vectores" id="toc-resta-de-vectores" class="nav-link" data-scroll-target="#resta-de-vectores">Resta de vectores</a>
   <ul class="collapse">
-  <li><a href="#método-gráfico-1" id="toc-método-gráfico-1" class="nav-link" data-scroll-target="#método-gráfico-1">Método gráfico</a></li>
+  <li><a href="#método-gráfico" id="toc-método-gráfico" class="nav-link" data-scroll-target="#método-gráfico">Método gráfico</a></li>
   <li><a href="#método-analítico" id="toc-método-analítico" class="nav-link" data-scroll-target="#método-analítico">Método analítico</a></li>
   </ul></li>
   </ul>
@@ -430,8 +429,7 @@ window.Quarto = {
 <hr>
 <section id="suma-de-vectores" class="level2">
 <h2 class="anchored" data-anchor-id="suma-de-vectores">Suma de vectores</h2>
-<section id="método-gráfico" class="level3">
-<h3 class="anchored" data-anchor-id="método-gráfico">Método gráfico</h3>
+<p>Para sumar dos vectoresm no basta con sumar sus magnitudes, sino que hay que considerar su dirección. La suma de dos vectores <span class="math inline">\(\vec{A}\)</span> y <span class="math inline">\(\vec{B}\)</span> se llama <strong>vector resultante</strong> y se escribe <span class="math display">\[\vec{R}=\vec{A}+\vec{B}\]</span>. ### Método gráfico</p>
 <p>Para sumar <span class="math inline">\(\vec{A}\)</span> y <span class="math inline">\(\vec{B}\)</span> gráficamente se usa el método de <strong>cabeza a cola</strong>:</p>
 <ol type="1">
 <li>Dibuja <span class="math inline">\(\vec{A}\)</span> con la longitud y orientación correctas.</li>
@@ -447,7 +445,6 @@ window.Quarto = {
 <li><strong>Asociativa:</strong> <span class="math inline">\((\vec{A}+\vec{B})+\vec{C}=\vec{A}+(\vec{B}+\vec{C})\)</span>. Podemos agrupar como queramos, lo que permite sumar tantos vectores como se necesite colocándolos uno tras otro, de cabeza a cola.</li>
 </ul>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAA0CAYAAADL0WWEAAACPElEQVR4nO2bq44qQRRF6z4EDiQOJBKJBIdEIvmE/gQ+AYkEhwSHBIejP6E/AYnjZlVySA8z4oY93Mdkr6TT3fU6VeucJmPm5+12uyXzFN+fm2YsT8TyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELO8ryCvLMq1Wq3ftu90uHQ6HP7YP4m232zdtl8slrdfrVFXV35dXVVWazWZv2rrd7l0em+UC/jXuVfKI95iwZrOZExn7ZB+tViudz+d/Q163Jipgg8FisbgfoN7+2ZDAxyQ+9n+0v5fKK8syjUajnKmiKNJ8Ps/t3PkkkDOZTO5jeecKmEd7ZJo7sofD4bvssyZzqRBiRcUCsRAQlc57jGN92mJv9BEjPtmo/vo+eGZu7P0l8vr9fup0Ojk4gaKKqDje6Y9Dspm4AsYxhntknYMiL9YKmBcHR0S9QiI2bawXz7F+VBZ7YT7vIYZxXMSMfXCPJLPWyz7boihyoHrWnqUu5HGdEHs8Hj/8tKLi6OO3kysE1df8nZ+HGIN4+DGPuv1k2u32PXMc4HQ6pel0mvs4QFQA/ZvNJl2v19zGPNr3+32+h6zBYJCfG41Gfg5IEO+ss1wu85y6CPpIILEZQ5XF4ZHKeuPxOMel+upV1uv17m2swR555izE+Ob/9P4Cf+el/5Bf0fckFVnT1G8AAAAASUVORK5CYII=" class="img-fluid"> <!-- FIGURA: conmutatividad, A + B y B + A llegan al mismo punto --></p>
-</section>
 <section id="método-analítico-por-componentes" class="level3">
 <h3 class="anchored" data-anchor-id="método-analítico-por-componentes">Método analítico (por componentes)</h3>
 <p>Dibujar es útil para entender, pero para obtener números precisos conviene sumar <strong>componente a componente</strong>. Si</p>
@@ -578,8 +575,8 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="resta-de-vectores">Resta de vectores</h2>
 <p>Restar un vector es lo mismo que <strong>sumar su negativo</strong>:</p>
 <p><span class="math display">\[\vec{A}-\vec{B}=\vec{A}+(-\vec{B})\]</span></p>
-<section id="método-gráfico-1" class="level3">
-<h3 class="anchored" data-anchor-id="método-gráfico-1">Método gráfico</h3>
+<section id="método-gráfico" class="level3">
+<h3 class="anchored" data-anchor-id="método-gráfico">Método gráfico</h3>
 <p>Para obtener <span class="math inline">\(\vec{A}-\vec{B}\)</span> se dibuja <span class="math inline">\(-\vec{B}\)</span> (la flecha de <span class="math inline">\(\vec{B}\)</span> invertida) y se suma a <span class="math inline">\(\vec{A}\)</span> con el método de cabeza a cola.</p>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAA0CAYAAADL0WWEAAACPElEQVR4nO2bq44qQRRF6z4EDiQOJBKJBIdEIvmE/gQ+AYkEhwSHBIejP6E/AYnjZlVySA8z4oY93Mdkr6TT3fU6VeucJmPm5+12uyXzFN+fm2YsT8TyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELO8ryCvLMq1Wq3ftu90uHQ6HP7YP4m232zdtl8slrdfrVFXV35dXVVWazWZv2rrd7l0em+UC/jXuVfKI95iwZrOZExn7ZB+tViudz+d/Q163Jipgg8FisbgfoN7+2ZDAxyQ+9n+0v5fKK8syjUajnKmiKNJ8Ps/t3PkkkDOZTO5jeecKmEd7ZJo7sofD4bvssyZzqRBiRcUCsRAQlc57jGN92mJv9BEjPtmo/vo+eGZu7P0l8vr9fup0Ojk4gaKKqDje6Y9Dspm4AsYxhntknYMiL9YKmBcHR0S9QiI2bawXz7F+VBZ7YT7vIYZxXMSMfXCPJLPWyz7boihyoHrWnqUu5HGdEHs8Hj/8tKLi6OO3kysE1df8nZ+HGIN4+DGPuv1k2u32PXMc4HQ6pel0mvs4QFQA/ZvNJl2v19zGPNr3+32+h6zBYJCfG41Gfg5IEO+ss1wu85y6CPpIILEZQ5XF4ZHKeuPxOMel+upV1uv17m2swR555izE+Ob/9P4Cf+el/5Bf0fckFVnT1G8AAAAASUVORK5CYII=" class="img-fluid"> <!-- FIGURA: resta de vectores A - B, construida como A + (-B) --></p>
 <p>Una forma práctica de visualizarla: si <span class="math inline">\(\vec{A}\)</span> y <span class="math inline">\(\vec{B}\)</span> se dibujan con la misma cola, el vector <span class="math inline">\(\vec{A}-\vec{B}\)</span> es la flecha que va desde la <strong>cabeza de <span class="math inline">\(\vec{B}\)</span> hasta la cabeza de <span class="math inline">\(\vec{A}\)</span></strong>.</p>
