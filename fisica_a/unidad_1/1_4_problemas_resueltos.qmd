@@ -13,6 +13,47 @@ Te recomiendo **intentar cada problema antes de abrir la solución**. Equivocart
 6. **Revisa el resultado**: ¿tiene las unidades correctas, las cifras significativas adecuadas y un valor razonable? Si es un vector, ¿la dirección coincide con tu dibujo?
 :::
 
+::: {.callout-note icon="false"}
+## Resumen de la unidad
+
+**Cifras significativas**
+
+* Los dígitos distintos de cero y los ceros entre ellos son significativos; los ceros a la izquierda no lo son. Usa notación científica para evitar ambigüedades: $1.50\times10^3$ tiene 3 cifras.
+* **Multiplicación y división:** el resultado lleva tantas cifras significativas como el dato que tenga *menos* cifras.
+* **Suma y resta:** el resultado lleva tantos decimales como el dato que tenga *menos* decimales.
+* Los números exactos (factores de conversión definidos, constantes como $\pi$ o $\tfrac{4}{3}$) no limitan las cifras significativas.
+
+**Conversión de unidades**
+
+$$\text{cantidad deseada}=\text{cantidad dada}\times\frac{\text{unidad deseada}}{\text{unidad dada}}$$
+
+* Acomoda cada factor de conversión para que la unidad original se cancele.
+* Si la unidad está elevada a una potencia, el factor también: $1\,\text{m}^2=10^{4}\,\text{cm}^2$ y $1\,\text{m}^3=10^{6}\,\text{cm}^3$.
+* Equivalencias frecuentes: $1\,\frac{\text{m}}{\text{s}}=3.6\,\frac{\text{km}}{\text{h}}$, $\;1\,\text{in}=2.54\,\text{cm}$, $\;1\,\text{mi}=1609\,\text{m}$, $\;1\,\text{L}=10^{-3}\,\text{m}^3$.
+
+**Vectores**
+
+Sea $c$ cualquier escalar, y $\vec{A}$ y $\vec{B}$ dos vectores cuya notación en componentes es
+
+$$\vec{A}=A_x\,\hat{\imath}+A_y\,\hat{\jmath}+A_z\,\hat{k} \qquad\qquad \vec{B}=B_x\,\hat{\imath}+B_y\,\hat{\jmath}+B_z\,\hat{k}$$
+
+las operaciones vectoriales básicas son:
+
+| Operación | Fórmula |
+|:----------|:--------|
+| Suma | $\vec{A}+\vec{B}=(A_x+B_x)\,\hat{\imath}+(A_y+B_y)\,\hat{\jmath}+(A_z+B_z)\,\hat{k}$ |
+| Resta | $\vec{A}-\vec{B}=(A_x-B_x)\,\hat{\imath}+(A_y-B_y)\,\hat{\jmath}+(A_z-B_z)\,\hat{k}$ |
+| Multiplicación por un escalar | $c\vec{A}=cA_x\,\hat{\imath}+cA_y\,\hat{\jmath}+cA_z\,\hat{k}$ |
+| Magnitud | $\lvert\vec{A}\rvert=\sqrt{A_x^2+A_y^2+A_z^2}$ |
+| Vector unitario | $\hat{A}=\dfrac{\vec{A}}{\lvert\vec{A}\rvert}$ |
+
+En el plano ($A_z=0$), un vector de magnitud $A$ y ángulo $\theta$ medido desde el eje $+x$ cumple
+
+$$A_x=A\cos\theta \qquad A_y=A\sin\theta \qquad \theta=\tan^{-1}\!\left(\frac{A_y}{A_x}\right)$$
+
+revisando siempre el cuadrante con los signos de $A_x$ y $A_y$.
+:::
+
 ***
 
 ## Problema 1.1.

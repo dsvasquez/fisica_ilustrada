@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,13 +12,10 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -42,14 +39,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-ea1971949f186b5d7ecce1fd3cf000e4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-1033933cf7a2d68ded238f413a38f9a9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-ea1971949f186b5d7ecce1fd3cf000e4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-26d9cc88ab9604001aabd73cb1ea1d8f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-21fcf56ba1a3a1f47182456b1788f309.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-26d9cc88ab9604001aabd73cb1ea1d8f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -111,7 +108,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -295,7 +292,7 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../../fisica_a/unidad_1/1_introduccion.html" aria-current="page"> 
+    <a class="nav-link" href="../../fisica_a/unidad_1/1_introduccion.html"> 
 <span class="menu-text">Física A</span></a>
   </li>  
   <li class="nav-item">
@@ -309,79 +306,10 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../fisica_a/unidad_1/1_introduccion.html">Capítulo 1: Física y Medición</a></li><li class="breadcrumb-item"><a href="../../fisica_a/unidad_1/1_3_aritmetica_vectorial.html">Aritmética vectorial</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Capítulo 1: Física y Medición</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../fisica_a/unidad_1/1_introduccion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">La Física de la Medición</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../fisica_a/unidad_1/1_2_vectores.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Vectores</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../fisica_a/unidad_1/1_3_aritmetica_vectorial.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Aritmética vectorial</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../fisica_a/unidad_1/1_4_problemas_resueltos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Problemas resueltos</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Capítulo 2: Cinemática</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../fisica_a/unidad_2/2_1_movimiento1d.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Movimiento en una dimensión</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -406,7 +334,7 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../fisica_a/unidad_1/1_introduccion.html">Capítulo 1: Física y Medición</a></li><li class="breadcrumb-item"><a href="../../fisica_a/unidad_1/1_3_aritmetica_vectorial.html">Aritmética vectorial</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Aritmética vectorial</h1>
 </div>
@@ -436,15 +364,19 @@ window.Quarto = {
 <li>Dibuja <span class="math inline">\(\vec{B}\)</span> de modo que su <strong>cola</strong> (el inicio de la flecha) coincida con la <strong>cabeza</strong> (la punta) de <span class="math inline">\(\vec{A}\)</span>.</li>
 <li>El vector <strong>suma</strong> o <strong>resultante</strong>, <span class="math inline">\(\vec{R}=\vec{A}+\vec{B}\)</span>, es la flecha que va desde la cola de <span class="math inline">\(\vec{A}\)</span> hasta la cabeza de <span class="math inline">\(\vec{B}\)</span>.</li>
 </ol>
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAACgUlEQVR4nO3csa4hURzH8f/u3USnU5mKikpHp6FUeQKVclTqTTwBL0Clo1N5AV5ANFSj0ulobP4nGcEme5Nt5pv4fZLJnZl7HXK+54zu/jocDncTjJ9ZfwB5pSAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCk3mQ5XJpzWbzcZ0kiY1GI5tOp7bb7cK9xWIRjuFw+F/jP7/Ox/Sx/T38vdx4PLb1eh1+2qcHabVaViwWH9eTycR6vV44/Nx5jG63a/V6PZynLpeLbbfbMMk+uX7u997HTyf+eXwfz8/9d6fTydrtdvh9ugg+Nkg+n3+5TpLEoigK5+lkpzzc8+T6azebTfg7v+/H+3jv174TXLVafbzmeUH4WB8d5F/u9/tfK/5dHMdhEn2V+6r/jocgwwWJouixCxqNRjjSVe6Tnu6eZ5VK5eVR9l1k5zvPx/LDx035YzFLX3Ec/87yA/gjZzabWblcDoc/PubzuR2Px7DiC4WCXa9X2+/3YSf4jkj57hkMBtbv90PE1WoVJjSXy718qXusWq0WJr9UKoVrH9+/S/yef4bb7Wbn89k6nY5l6Yf+oxwL7pH16RQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBjOUPhrbOsxsB4ZEAAAAASUVORK5CYII=" class="img-fluid"> <!-- FIGURA: suma de dos vectores por el método de cabeza a cola, mostrando A, B y la resultante R --></p>
+<p>Error rendering placeholder <!-- FIGURA: suma de dos vectores por el método de cabeza a cola, mostrando A, B y la resultante R --></p>
 <p>Otra forma de verlo es el <strong>método del paralelogramo</strong>: se dibujan <span class="math inline">\(\vec{A}\)</span> y <span class="math inline">\(\vec{B}\)</span> con la misma cola y se completa el paralelogramo; la resultante es la diagonal que parte de esa cola común.</p>
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAACgUlEQVR4nO3csa4hURzH8f/u3USnU5mKikpHp6FUeQKVclTqTTwBL0Clo1N5AV5ANFSj0ulobP4nGcEme5Nt5pv4fZLJnZl7HXK+54zu/jocDncTjJ9ZfwB5pSAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCk3mQ5XJpzWbzcZ0kiY1GI5tOp7bb7cK9xWIRjuFw+F/jP7/Ox/Sx/T38vdx4PLb1eh1+2qcHabVaViwWH9eTycR6vV44/Nx5jG63a/V6PZynLpeLbbfbMMk+uX7u997HTyf+eXwfz8/9d6fTydrtdvh9ugg+Nkg+n3+5TpLEoigK5+lkpzzc8+T6azebTfg7v+/H+3jv174TXLVafbzmeUH4WB8d5F/u9/tfK/5dHMdhEn2V+6r/jocgwwWJouixCxqNRjjSVe6Tnu6eZ5VK5eVR9l1k5zvPx/LDx035YzFLX3Ec/87yA/gjZzabWblcDoc/PubzuR2Px7DiC4WCXa9X2+/3YSf4jkj57hkMBtbv90PE1WoVJjSXy718qXusWq0WJr9UKoVrH9+/S/yef4bb7Wbn89k6nY5l6Yf+oxwL7pH16RQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBjOUPhrbOsxsB4ZEAAAAASUVORK5CYII=" class="img-fluid"> <!-- FIGURA: método del paralelogramo para A + B --></p>
+<p>Error rendering placeholder <!-- FIGURA: método del paralelogramo para A + B --></p>
 <p>La suma de vectores cumple dos propiedades que conocemos de los números:</p>
 <ul>
 <li><strong>Conmutativa:</strong> <span class="math inline">\(\vec{A}+\vec{B}=\vec{B}+\vec{A}\)</span>. El orden no altera el resultado.</li>
 <li><strong>Asociativa:</strong> <span class="math inline">\((\vec{A}+\vec{B})+\vec{C}=\vec{A}+(\vec{B}+\vec{C})\)</span>. Podemos agrupar como queramos, lo que permite sumar tantos vectores como se necesite colocándolos uno tras otro, de cabeza a cola.</li>
 </ul>
+<<<<<<< HEAD
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAA0CAYAAADL0WWEAAACPElEQVR4nO2bq44qQRRF6z4EDiQOJBKJBIdEIvmE/gQ+AYkEhwSHBIejP6E/AYnjZlVySA8z4oY93Mdkr6TT3fU6VeucJmPm5+12uyXzFN+fm2YsT8TyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELO8ryCvLMq1Wq3ftu90uHQ6HP7YP4m232zdtl8slrdfrVFXV35dXVVWazWZv2rrd7l0em+UC/jXuVfKI95iwZrOZExn7ZB+tViudz+d/Q163Jipgg8FisbgfoN7+2ZDAxyQ+9n+0v5fKK8syjUajnKmiKNJ8Ps/t3PkkkDOZTO5jeecKmEd7ZJo7sofD4bvssyZzqRBiRcUCsRAQlc57jGN92mJv9BEjPtmo/vo+eGZu7P0l8vr9fup0Ojk4gaKKqDje6Y9Dspm4AsYxhntknYMiL9YKmBcHR0S9QiI2bawXz7F+VBZ7YT7vIYZxXMSMfXCPJLPWyz7boihyoHrWnqUu5HGdEHs8Hj/8tKLi6OO3kysE1df8nZ+HGIN4+DGPuv1k2u32PXMc4HQ6pel0mvs4QFQA/ZvNJl2v19zGPNr3+32+h6zBYJCfG41Gfg5IEO+ss1wu85y6CPpIILEZQ5XF4ZHKeuPxOMel+upV1uv17m2swR555izE+Ob/9P4Cf+el/5Bf0fckFVnT1G8AAAAASUVORK5CYII=" class="img-fluid"> <!-- FIGURA: conmutatividad, A + B y B + A llegan al mismo punto --></p>
+=======
+<p>Error rendering placeholder <!-- FIGURA: conmutatividad, A + B y B + A llegan al mismo punto --></p>
+>>>>>>> 2112b85f643e1488318bf1b33c5580a9f72b6705
 <section id="método-analítico-por-componentes" class="level3">
 <h3 class="anchored" data-anchor-id="método-analítico-por-componentes">Método analítico (por componentes)</h3>
 <p>Dibujar es útil para entender, pero para obtener números precisos conviene sumar <strong>componente a componente</strong>. Si</p>
@@ -513,7 +445,7 @@ window.Quarto = {
 <li>Si <span class="math inline">\(c=0\)</span>, se obtiene el <strong>vector cero</strong>, <span class="math inline">\(\vec{0}\)</span>, que tiene magnitud cero.</li>
 </ul>
 <p>Por ejemplo, <span class="math inline">\(2\vec{A}\)</span> es un vector del doble de largo que <span class="math inline">\(\vec{A}\)</span> y en la misma dirección, mientras que <span class="math inline">\(-\tfrac{1}{2}\vec{A}\)</span> tiene la mitad de su longitud y apunta en sentido contrario.</p>
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAACgUlEQVR4nO3csa4hURzH8f/u3USnU5mKikpHp6FUeQKVclTqTTwBL0Clo1N5AV5ANFSj0ulobP4nGcEme5Nt5pv4fZLJnZl7HXK+54zu/jocDncTjJ9ZfwB5pSAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCoyAwCgKjIDAKAqMgMAoCk3mQ5XJpzWbzcZ0kiY1GI5tOp7bb7cK9xWIRjuFw+F/jP7/Ox/Sx/T38vdx4PLb1eh1+2qcHabVaViwWH9eTycR6vV44/Nx5jG63a/V6PZynLpeLbbfbMMk+uX7u997HTyf+eXwfz8/9d6fTydrtdvh9ugg+Nkg+n3+5TpLEoigK5+lkpzzc8+T6azebTfg7v+/H+3jv174TXLVafbzmeUH4WB8d5F/u9/tfK/5dHMdhEn2V+6r/jocgwwWJouixCxqNRjjSVe6Tnu6eZ5VK5eVR9l1k5zvPx/LDx035YzFLX3Ec/87yA/gjZzabWblcDoc/PubzuR2Px7DiC4WCXa9X2+/3YSf4jkj57hkMBtbv90PE1WoVJjSXy718qXusWq0WJr9UKoVrH9+/S/yef4bb7Wbn89k6nY5l6Yf+oxwL7pH16RQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBYBQERkFgFARGQWAUBEZBjOUPhrbOsxsB4ZEAAAAASUVORK5CYII=" class="img-fluid"> <!-- FIGURA: un vector A junto con 2A y -A/2 --></p>
+<p>Error rendering placeholder <!-- FIGURA: un vector A junto con 2A y -A/2 --></p>
 <p>En componentes, el escalar multiplica cada una de ellas:</p>
 <p><span class="math display">\[c\,\vec{A}=cA_x\,\hat{\imath}+cA_y\,\hat{\jmath}\]</span></p>
 <div class="callout callout-style-simple callout-note">
@@ -565,7 +497,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="el-negativo-de-un-vector">El negativo de un vector</h2>
 <p>El <strong>negativo</strong> de un vector <span class="math inline">\(\vec{A}\)</span>, escrito <span class="math inline">\(-\vec{A}\)</span>, es el vector con la <strong>misma magnitud</strong> pero <strong>sentido opuesto</strong>. Es el caso particular de multiplicar por el escalar <span class="math inline">\(c=-1\)</span>:</p>
 <p><span class="math display">\[-\vec{A}=(-1)\,\vec{A}=-A_x\,\hat{\imath}-A_y\,\hat{\jmath}\]</span></p>
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAA0CAYAAADL0WWEAAACPElEQVR4nO2bq44qQRRF6z4EDiQOJBKJBIdEIvmE/gQ+AYkEhwSHBIejP6E/AYnjZlVySA8z4oY93Mdkr6TT3fU6VeucJmPm5+12uyXzFN+fm2YsT8TyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELO8ryCvLMq1Wq3ftu90uHQ6HP7YP4m232zdtl8slrdfrVFXV35dXVVWazWZv2rrd7l0em+UC/jXuVfKI95iwZrOZExn7ZB+tViudz+d/Q163Jipgg8FisbgfoN7+2ZDAxyQ+9n+0v5fKK8syjUajnKmiKNJ8Ps/t3PkkkDOZTO5jeecKmEd7ZJo7sofD4bvssyZzqRBiRcUCsRAQlc57jGN92mJv9BEjPtmo/vo+eGZu7P0l8vr9fup0Ojk4gaKKqDje6Y9Dspm4AsYxhntknYMiL9YKmBcHR0S9QiI2bawXz7F+VBZ7YT7vIYZxXMSMfXCPJLPWyz7boihyoHrWnqUu5HGdEHs8Hj/8tKLi6OO3kysE1df8nZ+HGIN4+DGPuv1k2u32PXMc4HQ6pel0mvs4QFQA/ZvNJl2v19zGPNr3+32+h6zBYJCfG41Gfg5IEO+ss1wu85y6CPpIILEZQ5XF4ZHKeuPxOMel+upV1uv17m2swR555izE+Ob/9P4Cf+el/5Bf0fckFVnT1G8AAAAASUVORK5CYII=" class="img-fluid"> <!-- FIGURA: un vector A y su negativo -A --></p>
+<p>Error rendering placeholder <!-- FIGURA: un vector A y su negativo -A --></p>
 <p>Gráficamente, <span class="math inline">\(-\vec{A}\)</span> es la misma flecha que <span class="math inline">\(\vec{A}\)</span> pero girada <span class="math inline">\(180^\circ\)</span>. Al sumarlos, se anulan:</p>
 <p><span class="math display">\[\vec{A}+(-\vec{A})=\vec{0}\]</span></p>
 <p>Por eso al negativo también se le llama el vector <strong>opuesto</strong> o <strong>inverso aditivo</strong> de <span class="math inline">\(\vec{A}\)</span>.</p>
@@ -578,9 +510,9 @@ window.Quarto = {
 <section id="método-gráfico" class="level3">
 <h3 class="anchored" data-anchor-id="método-gráfico">Método gráfico</h3>
 <p>Para obtener <span class="math inline">\(\vec{A}-\vec{B}\)</span> se dibuja <span class="math inline">\(-\vec{B}\)</span> (la flecha de <span class="math inline">\(\vec{B}\)</span> invertida) y se suma a <span class="math inline">\(\vec{A}\)</span> con el método de cabeza a cola.</p>
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAA0CAYAAADL0WWEAAACPElEQVR4nO2bq44qQRRF6z4EDiQOJBKJBIdEIvmE/gQ+AYkEhwSHBIejP6E/AYnjZlVySA8z4oY93Mdkr6TT3fU6VeucJmPm5+12uyXzFN+fm2YsT8TyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELO8ryCvLMq1Wq3ftu90uHQ6HP7YP4m232zdtl8slrdfrVFXV35dXVVWazWZv2rrd7l0em+UC/jXuVfKI95iwZrOZExn7ZB+tViudz+d/Q163Jipgg8FisbgfoN7+2ZDAxyQ+9n+0v5fKK8syjUajnKmiKNJ8Ps/t3PkkkDOZTO5jeecKmEd7ZJo7sofD4bvssyZzqRBiRcUCsRAQlc57jGN92mJv9BEjPtmo/vo+eGZu7P0l8vr9fup0Ojk4gaKKqDje6Y9Dspm4AsYxhntknYMiL9YKmBcHR0S9QiI2bawXz7F+VBZ7YT7vIYZxXMSMfXCPJLPWyz7boihyoHrWnqUu5HGdEHs8Hj/8tKLi6OO3kysE1df8nZ+HGIN4+DGPuv1k2u32PXMc4HQ6pel0mvs4QFQA/ZvNJl2v19zGPNr3+32+h6zBYJCfG41Gfg5IEO+ss1wu85y6CPpIILEZQ5XF4ZHKeuPxOMel+upV1uv17m2swR555izE+Ob/9P4Cf+el/5Bf0fckFVnT1G8AAAAASUVORK5CYII=" class="img-fluid"> <!-- FIGURA: resta de vectores A - B, construida como A + (-B) --></p>
+<p>Error rendering placeholder <!-- FIGURA: resta de vectores A - B, construida como A + (-B) --></p>
 <p>Una forma práctica de visualizarla: si <span class="math inline">\(\vec{A}\)</span> y <span class="math inline">\(\vec{B}\)</span> se dibujan con la misma cola, el vector <span class="math inline">\(\vec{A}-\vec{B}\)</span> es la flecha que va desde la <strong>cabeza de <span class="math inline">\(\vec{B}\)</span> hasta la cabeza de <span class="math inline">\(\vec{A}\)</span></strong>.</p>
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAA0CAYAAADL0WWEAAACPElEQVR4nO2bq44qQRRF6z4EDiQOJBKJBIdEIvmE/gQ+AYkEhwSHBIejP6E/AYnjZlVySA8z4oY93Mdkr6TT3fU6VeucJmPm5+12uyXzFN+fm2YsT8TyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELE/A8gQsT8DyBCxPwPIELO8ryCvLMq1Wq3ftu90uHQ6HP7YP4m232zdtl8slrdfrVFXV35dXVVWazWZv2rrd7l0em+UC/jXuVfKI95iwZrOZExn7ZB+tViudz+d/Q163Jipgg8FisbgfoN7+2ZDAxyQ+9n+0v5fKK8syjUajnKmiKNJ8Ps/t3PkkkDOZTO5jeecKmEd7ZJo7sofD4bvssyZzqRBiRcUCsRAQlc57jGN92mJv9BEjPtmo/vo+eGZu7P0l8vr9fup0Ojk4gaKKqDje6Y9Dspm4AsYxhntknYMiL9YKmBcHR0S9QiI2bawXz7F+VBZ7YT7vIYZxXMSMfXCPJLPWyz7boihyoHrWnqUu5HGdEHs8Hj/8tKLi6OO3kysE1df8nZ+HGIN4+DGPuv1k2u32PXMc4HQ6pel0mvs4QFQA/ZvNJl2v19zGPNr3+32+h6zBYJCfG41Gfg5IEO+ss1wu85y6CPpIILEZQ5XF4ZHKeuPxOMel+upV1uv17m2swR555izE+Ob/9P4Cf+el/5Bf0fckFVnT1G8AAAAASUVORK5CYII=" class="img-fluid"> <!-- FIGURA: A y B con la misma cola, y A - B uniendo sus cabezas --></p>
+<p>Error rendering placeholder <!-- FIGURA: A y B con la misma cola, y A - B uniendo sus cabezas --></p>
 </section>
 <section id="método-analítico" class="level3">
 <h3 class="anchored" data-anchor-id="método-analítico">Método analítico</h3>

@@ -443,6 +443,73 @@ window.Quarto = {
 </ol>
 </div>
 </div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Resumen de la unidad
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Cifras significativas</strong></p>
+<ul>
+<li>Los dígitos distintos de cero y los ceros entre ellos son significativos; los ceros a la izquierda no lo son. Usa notación científica para evitar ambigüedades: <span class="math inline">\(1.50\times10^3\)</span> tiene 3 cifras.</li>
+<li><strong>Multiplicación y división:</strong> el resultado lleva tantas cifras significativas como el dato que tenga <em>menos</em> cifras.</li>
+<li><strong>Suma y resta:</strong> el resultado lleva tantos decimales como el dato que tenga <em>menos</em> decimales.</li>
+<li>Los números exactos (factores de conversión definidos, constantes como <span class="math inline">\(\pi\)</span> o <span class="math inline">\(\tfrac{4}{3}\)</span>) no limitan las cifras significativas.</li>
+</ul>
+<p><strong>Conversión de unidades</strong></p>
+<p><span class="math display">\[\text{cantidad deseada}=\text{cantidad dada}\times\frac{\text{unidad deseada}}{\text{unidad dada}}\]</span></p>
+<ul>
+<li>Acomoda cada factor de conversión para que la unidad original se cancele.</li>
+<li>Si la unidad está elevada a una potencia, el factor también: <span class="math inline">\(1\,\text{m}^2=10^{4}\,\text{cm}^2\)</span> y <span class="math inline">\(1\,\text{m}^3=10^{6}\,\text{cm}^3\)</span>.</li>
+<li>Equivalencias frecuentes: <span class="math inline">\(1\,\frac{\text{m}}{\text{s}}=3.6\,\frac{\text{km}}{\text{h}}\)</span>, <span class="math inline">\(\;1\,\text{in}=2.54\,\text{cm}\)</span>, <span class="math inline">\(\;1\,\text{mi}=1609\,\text{m}\)</span>, <span class="math inline">\(\;1\,\text{L}=10^{-3}\,\text{m}^3\)</span>.</li>
+</ul>
+<p><strong>Vectores</strong></p>
+<p>Sea <span class="math inline">\(c\)</span> cualquier escalar, y <span class="math inline">\(\vec{A}\)</span> y <span class="math inline">\(\vec{B}\)</span> dos vectores cuya notación en componentes es</p>
+<p><span class="math display">\[\vec{A}=A_x\,\hat{\imath}+A_y\,\hat{\jmath}+A_z\,\hat{k} \qquad\qquad \vec{B}=B_x\,\hat{\imath}+B_y\,\hat{\jmath}+B_z\,\hat{k}\]</span></p>
+<p>las operaciones vectoriales básicas son:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Operación</th>
+<th style="text-align: left;">Fórmula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Suma</td>
+<td style="text-align: left;"><span class="math inline">\(\vec{A}+\vec{B}=(A_x+B_x)\,\hat{\imath}+(A_y+B_y)\,\hat{\jmath}+(A_z+B_z)\,\hat{k}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Resta</td>
+<td style="text-align: left;"><span class="math inline">\(\vec{A}-\vec{B}=(A_x-B_x)\,\hat{\imath}+(A_y-B_y)\,\hat{\jmath}+(A_z-B_z)\,\hat{k}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Multiplicación por un escalar</td>
+<td style="text-align: left;"><span class="math inline">\(c\vec{A}=cA_x\,\hat{\imath}+cA_y\,\hat{\jmath}+cA_z\,\hat{k}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Magnitud</td>
+<td style="text-align: left;"><span class="math inline">\(\lvert\vec{A}\rvert=\sqrt{A_x^2+A_y^2+A_z^2}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Vector unitario</td>
+<td style="text-align: left;"><span class="math inline">\(\hat{A}=\dfrac{\vec{A}}{\lvert\vec{A}\rvert}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>En el plano (<span class="math inline">\(A_z=0\)</span>), un vector de magnitud <span class="math inline">\(A\)</span> y ángulo <span class="math inline">\(\theta\)</span> medido desde el eje <span class="math inline">\(+x\)</span> cumple</p>
+<p><span class="math display">\[A_x=A\cos\theta \qquad A_y=A\sin\theta \qquad \theta=\tan^{-1}\!\left(\frac{A_y}{A_x}\right)\]</span></p>
+<p>revisando siempre el cuadrante con los signos de <span class="math inline">\(A_x\)</span> y <span class="math inline">\(A_y\)</span>.</p>
+</div>
+</div>
 <hr>
 <section id="problema-1.1." class="level2">
 <h2 class="anchored" data-anchor-id="problema-1.1.">Problema 1.1.</h2>
@@ -453,7 +520,7 @@ window.Quarto = {
 <li><p>el volumen de la placa, en <span class="math inline">\(\text{cm}^3\)</span> y en <span class="math inline">\(\text{m}^3\)</span>.</p></li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -462,7 +529,7 @@ window.Quarto = {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="a">
 <li>El perímetro es una <strong>suma</strong>, así que importa el número de decimales. Primero sumamos largo y ancho:</li>
@@ -494,7 +561,7 @@ window.Quarto = {
 <li><p>Calcule la masa de la viga en kilogramos.</p></li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -503,7 +570,7 @@ window.Quarto = {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="a">
 <li>Hay que convertir dos unidades: gramos a kilogramos y centímetros cúbicos a metros cúbicos. Como <span class="math inline">\(1\,\text{m}^3=10^6\,\text{cm}^3\)</span>:</li>
@@ -528,7 +595,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="problema-1.3.">Problema 1.3.</h2>
 <p>Un velocista recorre <span class="math inline">\(100.0\,\text{yd}\)</span> en <span class="math inline">\(9.50\,\text{s}\)</span>. Determine su rapidez media en <span class="math inline">\(\frac{\text{m}}{\text{s}}\)</span> y en <span class="math inline">\(\frac{\text{km}}{\text{h}}\)</span>. ***</p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -537,7 +604,7 @@ window.Quarto = {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Convertimos primero la distancia. El factor <span class="math inline">\(1\,\text{yd}=0.9144\,\text{m}\)</span> es exacto:</p>
 <p><span class="math display">\[100.0\,\cancel{\text{yd}}\left(\frac{0.9144\,\text{m}}{1\,\cancel{\text{yd}}}\right)=91.44\,\text{m}\]</span></p>
@@ -570,7 +637,7 @@ window.Quarto = {
 </ol>
 <!-- FIGURA: vector de 250 m en el segundo cuadrante, a 35.0° por encima del eje -x -->
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -579,7 +646,7 @@ window.Quarto = {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="a">
 <li>“Al norte del oeste” significa que partimos del oeste (eje <span class="math inline">\(-x\)</span>) y giramos <span class="math inline">\(35.0^\circ\)</span> hacia el norte. El vector queda en el <strong>segundo cuadrante</strong>, así que esperamos <span class="math inline">\(d_x&lt;0\)</span> y <span class="math inline">\(d_y&gt;0\)</span>.</li>
@@ -614,7 +681,7 @@ window.Quarto = {
 <p>Determine (a) su desplazamiento total en notación de vectores unitarios, (b) la magnitud y dirección del desplazamiento y (c) la distancia total recorrida.</p>
 <!-- FIGURA: los tres desplazamientos colocados cabeza a cola y la resultante R desde el origen -->
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -623,7 +690,7 @@ window.Quarto = {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="a">
 <li>Tomamos el este como <span class="math inline">\(+x\)</span> y el norte como <span class="math inline">\(+y\)</span> y escribimos cada tramo por componentes. Conviene ordenarlos en una tabla:</li>
@@ -691,7 +758,7 @@ window.Quarto = {
 </ol>
 <!-- FIGURA: poste visto desde arriba con F1, F2 y la resultante R; F3 opuesta a R -->
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -700,7 +767,7 @@ window.Quarto = {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="a">
 <li>Descomponemos cada fuerza:</li>
@@ -728,7 +795,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="problema-1.7.">Problema 1.7.</h2>
 <p>Un automóvil da vuelta en una esquina. Antes de la vuelta su velocidad es de <span class="math inline">\(20.0\,\frac{\text{m}}{\text{s}}\)</span> hacia el este y después de ella es de <span class="math inline">\(15.0\,\frac{\text{m}}{\text{s}}\)</span> hacia el norte. Determine el <strong>cambio de velocidad</strong> <span class="math inline">\(\Delta\vec{v}=\vec{v}_f-\vec{v}_i\)</span> (magnitud y dirección).</p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -737,7 +804,7 @@ window.Quarto = {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Con el este como <span class="math inline">\(+x\)</span> y el norte como <span class="math inline">\(+y\)</span>:</p>
 <p><span class="math display">\[\vec{v}_i=20.0\,\hat{\imath}\;\frac{\text{m}}{\text{s}} \qquad\qquad \vec{v}_f=15.0\,\hat{\jmath}\;\frac{\text{m}}{\text{s}}\]</span></p>
@@ -765,7 +832,7 @@ window.Quarto = {
 <li><p>el vector unitario <span class="math inline">\(\hat{C}\)</span>.</p></li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -774,7 +841,7 @@ window.Quarto = {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="a">
 <li>Primero multiplicamos cada vector por su escalar:</li>
